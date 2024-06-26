@@ -25,7 +25,7 @@ Algebra (Godement, Chapter 0, Hungerford, Artin, Vinberg, Bourbaki, 李文威, �
 - Category Thoery (Milewski, Leinster, Riehl, Lawvere)
 - Geometries (<ruby>Сосинский<rt>Sossinski</rt></ruby>)
 - *Half of Advanced Algebra (With Hints)* XIONG Rui 半本高代习题集（带提示的那种) 熊锐
-- *Linear Algebra Problem Book* (Halmos) 
+- *Linear Algebra Problem Book* (Halmos)
 
 Set Theory (Halmos, Jech, Enderton)
 
@@ -36,6 +36,12 @@ Topology (Kelley, Simmons, Munkres, Morris, Bradley, nLab)
 Analysis + Linear Algebra -> Real Analysis / Complex Analysis / Functional Analysis (Halmos)
 
 - *A Hilbert Space Problem Book* Halmos
+
+Elementary Probability (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Papoulis) -> Probability Theory (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Rosenthal, <ruby>வரதன்<rt>Varadhan</rt></ruby>)
+
+- *Probability, Random Variables, and Random Processes (Schaum's Outlines)* HSU (許？徐？) Hwei Piao
+
+Probability and Statistics (Jaynes, <ruby>洪永淼<rt>Hong Yongmiao</rt></ruby>)
 
 Mathematical Logic (Ebbinghaus, Manin, Hamilton, Shoenfield, Mendelson)
 
