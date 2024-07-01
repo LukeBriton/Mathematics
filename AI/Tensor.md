@@ -435,6 +435,168 @@ So it's no wonder that one can become a little confused when trying to compare d
 
 [hilbert spaces - How do outer products differ from tensor products? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1757901/how-do-outer-products-differ-from-tensor-products?rq=1) 力有所不逮
 
+## Bilinear Form
+
+[linear algebra - Is it misleading to think of rank-2 tensors as matrices? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2400/is-it-misleading-to-think-of-rank-2-tensors-as-matrices?rq=1)
+
+Having picked up a rudimentary understanding of tensors from reading mechanics papers and Wikipedia, I tend to think of rank-2 tensors simply as square matrices (along with appropriate transformation rules). Certainly, if the distinction between vectors and dual vectors is ignored, a rank 2 tensor T seems to be simply a multilinear map $V×V→\mathbb{R}$, and (I think) any such map can be represented by a matrix $A$ using the mapping $(v,w)↦v^TAw$.
+
+My question is this: Is this a reasonable way of thinking about things, at least as long as you're working in $\mathbb{R}^n$? Are there any obvious problems or subtle misunderstandings that this naive approach can cause? Does it break down when you deal with something other than Rn? In short, is it "morally wrong"?
+
+btw, note that there is some inconsistency in terminology: one can speak about (m,n)-tensors — that is, multilinear maps $V^n×(V^∗)^m→\mathbb{R}$ (so your bilinear map is a (0,2)-tensor); and "rank-k tensor" may mean (k,0)-tensor ("covariant") or (0,k)-tensor ("contravariant") or sometimes any (n,m)-tensor with $n+m=k$.
+
+It's not misleading as long as you change your notion of equivalence. When a matrix represents a linear transformation $V→V$, the correct notion of equivalence is similarity: $M≃B^{−1}MB$ where $B$ is invertible. When a matrix represents a bilinear form $V×V→\mathbb{R}$, the correct notion of equivalence is *congruence*: $M\cong B^TMB$ where B is invertible. As long as you keep this distinction in mind, you're fine.
+
+You're absolutely right.
+
+Maybe someone will find useful a couple of remarks telling the same story in coordinate-free way:
+
+- What happens here is indeed identification of space with its dual: so a bilinear map $T:V×V→\mathbb{R}$ is rewritten as $V×V^∗→\mathbb{R}$ — which is exactly the same thing as a linear operator $A:V→V$ ;
+
+- An identification of $V$ and $V^∗$ is exactly the same thing as a scalar product on $V$, and using this scalar product one can write $T(v,w)=(v,Aw)$;
+
+- So orthogonal change of basis preserves this identification — in terms of Qiaochu Yuan's answer one can see this from the fact that for orthogonal matrix $B^T=B^{−1}$ (moral of the story: if you have a canonical scalar product, there is no difference between $T$ and $A$ whatsoever; and if you don't have one — see Qiaochu Yuan's answer.)
+
+[linear algebra - Is a bilinear form a tensor or a scalar "output" of that tensor? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4477570/is-a-bilinear-form-a-tensor-or-a-scalar-output-of-that-tensor)
+
+My first remark for you is to NOT overlook the distinction between a vector space and its dual: if you do, then you're going to make things a lot harder on yourself in the medium-long run.
+
+---
+
+A bilinear form on V is as you said in your first sentence, a function $b:V×V→\mathbb{R}$. I don't know where you're getting the rest of the stuff from. You say
+
+> doesn't this notion mean that $b$ itself must be an element of $\mathbb{R}$?
+
+Absolutely not! It is a function $V×V→\mathbb{R}$. Functions are not real numbers. The target space of the function is a real number in this case, but the function itself is obviously not a real number. I'm not sure why you introduced $\mathbf{B}$ in your post. The object $b$ is what is of interest; you can call b a *bilinear functional on V* or a *bilinear form on V*, or you can also call it a (0,2)-*tensor* on $V^*$, so $b∈T^0_2(V)$ (again, $b∉\mathbb{R}$). The words *form* or *functional* merely emphasize that the target space is $\mathbb{R}$. The most agnostic way of saying it is that $b$ is a bilinear mapping from $V×V$ into $\mathbb{R}$; such a phrasing immediately generalizes to situations where you have three different vector spaces $V_1×V_2→V_3$.
+
+Next, given two vectors $u,v∈V$, we get a number $b(u,v)∈\mathbb{R}$. We call this number the value/output of the bilinear form/functional/(0,2)-tensor $b$ on the pair of vectors $(u,v)$.
+
+Next, you seem to be writing a basis-expansion of $b$, but unfortunately things are not in the right space. As you've currently written it, $b∈V⊗V$, but as I mentioned in my first sentence, you shouldn't disregard the dual. We have the canonical isomorphism (for finite-dimensional $V$):
+
+$$
+\text{Hom}^2(V×V;\mathbb{R})≅\text{Hom}(V⊗V;\mathbb{R})=(V⊗V)^∗\cong V^∗⊗V^∗.
+$$
+
+So, the object $b$ naturally wants to live in $V^∗⊗V^∗$, NOT $V⊗V$.
+
+---
+
+If you want to write things out using a basis, then fix a basis $\{e_1,…,e_n\}$ of $V$ (you don't even need orthonormality), and let $\{ϵ_1,…,ϵ_n\}$ be the dual basis. Then, you can write
+
+$$
+b = \sum\limits_{i,j = 1}^nb(e_i, e_j)ϵ_i\otimesϵ_j\equiv\sum\limits_{i,j = 1}^nb_{ij}ϵ_i\otimesϵ_j
+$$
+
+So, if $u,v∈V$, then you can write them as $u=∑\limits_{i=1}^nu_ie_i$ and $v=∑\limits_{i=1}^nv_ie_i$ for some numbers $u_i,v_i$ (in fact, $u_i=ϵ_i(u), v_i=ϵ_i(v)$, i.e the component $u_i∈\mathbb{R}$ equals the value of the covector $ϵ_i∈V^∗$ when evaluated on the vector $u∈V$). Then, the value $b(u,v)$ can be written as:
+
+$$
+\begin{equation*}
+\begin{aligned}
+  b(u,v) &= \sum\limits_{i,j = 1}^nb_{ij}(ϵ_i\otimesϵ_j)(u,v)
+  \\ &:= \sum\limits_{i,j = 1}^n b_{ij}ϵ_i(u)\cdotϵ_j(v)
+  \\ &= \sum\limits_{i,j = 1}^n b_{ij}u_iv_j
+\end{aligned}
+\end{equation*}
+$$
+
+The relation with matrices is that you can store these numbers $b_{ij},u_i,v_j$ as
+
+$$
+\begin{equation*}
+\begin{aligned}
+   [b]= \begin{pmatrix} 
+        b_{11} & \dots  & b_{1n} \\
+        \vdots & \ddots & \\
+        b_{n1} & \dots  & b_{nn} 
+        \end{pmatrix},
+   [u]= \begin{pmatrix}
+        u_1 \\
+        \vdots \\
+        u_n
+        \end{pmatrix}, 
+   [v]= \begin{pmatrix}
+        v_1 \\
+        \vdots \\
+        v_n
+        \end{pmatrix},\end{aligned}
+\end{equation*}
+$$
+
+We call $[b]∈M_{n×n}(\mathbb{R})$ the *matrix representation of b* *relative to the basis* $\{e_1,…,e_n\}$ *of* $V$, and we call $[u]$ the *coordinate vector of $u$ relative to the basis* $\{e_1,…,e_n\}$ *of* $V$ (and likewise for $v$).
+
+Then, $b(u,v)=[u]^t⋅[b]⋅[v]$. So, the value of the tensor on a pair of vectors can be carried out using matrix multiplication once you fix a basis $\{e_1,…,e_n\}$ of $V$ (but conceptually, bases should be the last thing on your mind).
+
+---
+
+(I wrote everything above with lower indices simply because you don't like upper indices, so I included explicitly the summation symbols as well; the natural way to write this would have been $\{e_1,…,e_n\}$ for the basis, $\{ϵ^1,…,ϵ^n\}$ for the dual basis, $u=u^ie_i$ and $v=v^je_j$ for the vectors, and $b=b_{ij}ϵ^i⊗ϵ^j$ for the tensor b. Note also the dual basis only comes up if you want to abstractly write b in terms of a basis as $b=b(e_i,e_j)ϵ^i⊗ϵ^j$).
+
+[differential geometry - Why are bilinear maps represented as members of the tensor space $V^*\otimes V^*$ opposed to just members of the tensor space $V\otimes V$? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2636130/why-are-bilinear-maps-represented-as-members-of-the-tensor-space-v-otimes-v)
+
+By the universal property of the tensor product, every bilinear map $V×V→k$, where k is the underlying field, corresponds uniquely to a linear map $V⊗V→k$. So almost by definition of the tensor product, the set of bilinear maps out of $V×V$ is the space $\text{Hom}_k(V⊗V,k)=:(V⊗V)^∗$.
+
+Be careful though, it's true that if $V$ is finite dimensional we have isomorphisms $(V⊗V)^∗≅V^∗⊗V^∗≅V⊗V$. However, when $V$ is infinite dimensional we don't have $V≅V∗$, so that the identification of $(V⊗V)^∗$ with $V⊗V$ is no longer true.
+
+Could you explain the part about how when $V$ is infinite dimensional we don't have $V≅V^∗$?
+
+In general, if $V$ is infinite dimensional then $dim(V^∗)>dim(V)$. One can see this through the isomorphism $\text{Hom}_k(⨁\limits_{i∈I}V_i,k)≅∏\limits_{i∈I}\text{Hom}_k(V_i,k)$ and maybe an application of the axiom of choice. This means that $(V⊗V)^∗$ (i.e. $BilinearMaps(V×V,k)$) is in general bigger than $V⊗V$.
+
+[linear algebra - extending bilinear form with tensor product - Mathematics Stack Exchange](https://math.stackexchange.com/questions/3201177/extending-bilinear-form-with-tensor-product)
+
+## Rank
+
+[matrices - Is the rank of a Tensor different from the rank of a Matrix? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2245849/is-the-rank-of-a-tensor-different-from-the-rank-of-a-matrix)
+
+"number of dimensions" is a pretty terrible description. Looking at the website, their interpretation of "tensor" is not the same as the strict mathematical definition (which is to do with multilinear maps with certain properties).
+
+As far as that program is concerned, a tensor is a vector of vectors of vectors of... of vectors, where the *rank* is the number of nestings of "of vectors", so
+
+- A tensor of rank 1 is a vector, which is a one-dimensional array, `[a,b]`.
+
+- A tensor of rank 2 is a vector of vectors, or a matrix, or a two-dimensional array, `[[a,b],[c,d]]`.
+
+- A tensor of rank 3 is a vector of vectors of vectors, so something with three nestings, `[[[a,b],[c,d]],[[e,f],[g,h]]]` sort of thing.
+
+- &c.
+
+The "dimension" here is the (tensorial) rank, or the number of inputs you need to locate an entry. This is of course not the same as "dimension" in the sense that something has "dimension n" if is an ordered list of length n.
+
+[Are matrices rank 2 tensors? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/192391/are-matrices-rank-2-tensors)
+
+This question doesn't have a single good answer, because there isn't a universally agreed upon definition of "tensor" in mathematics. In particular:
+
+1. Tensors are sometimes defined as multidimensional arrays, in the same way that a matrix is a two-dimensional array. From this point of view, a matrix is certainly a special case of a tensor.
+
+2. In differential geometry and physics, "tensor" refers to a certain kind of object that can be described at a point on a manifold (though the word "tensor" is often used to refer to a *tensor field*, in which one tensor is chosen for every point). From this point of view, a matrix can be used to describe a rank-two tensor in local coordinates, but a rank-two tensor is not itself a matrix.
+
+3. In linear algebra, "tensor" sometimes refers to an element of a [tensor product](http://en.wikipedia.org/wiki/Tensor_product),
+   and sometimes refers to a certain kind of multilinear map. Again, neither of these is a generalization of "matrix", though you can get a matrix from a rank-two tensor if you choose a basis for your vector space.
+
+You run into the same problem if you ask a question like "Is a vector just a tuple of numbers?" Sometimes a vector is defined as a tuple of numbers, in which case the answer is yes. However, in differential geometry and physics, the word "vector" refers to an element of the tangent space to a manifold, while in linear algebra, a "vector" may be any element of a vector space.
+
+On a basic level, the statement "a vector is a rank 1 tensor, and a matrix is a rank 2 tensor" is roughly correct. This is certainly the simplest way of thinking about tensors, and is reflected in the [Einstein notation](http://en.wikipedia.org/wiki/Einstein_notation). However, it is important to appreciate the subtleties of this identification, and to realize that "tensor" often means something slightly different and more abstract than a multidimensional array.
+
+[matrices - Are rank 3 tensors always cubes? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/3817753/are-rank-3-tensors-always-cubes)
+
+## Miscellaneous
+
+[matrices - Why matrix of rank one can be written as a tensor product of two vectors? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1916619/why-matrix-of-rank-one-can-be-written-as-a-tensor-product-of-two-vectors)
+
+Let a matrix $A$ have columns $a⃗_i, i=1,…,N$. A rank one matrix is characterised by the fact that all columns $\vec{a}_i$ are linearly dependent, that is
+
+$$
+\vec{a}_i=b_i\vec{a}
+$$
+
+for some vector $\vec{a}$  and scalars $b_i$. Thus, the matrix $A$ takes the form 
+
+$$
+A=(b_1\vec{a} ,…,b_N\vec{a})=\vec{a}\vec{b}^T=\vec{a}\otimes\vec{b} ,
+$$
+
+where $\vec{b}^T=(b_1,…,b_N)$.
+
+[abstract algebra - Rank and determinant of a tensor product of matrices - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2259063/rank-and-determinant-of-a-tensor-product-of-matrices)
+
 ## PyTorch
 
 ### torch.dot()
