@@ -37,7 +37,7 @@ Analysis + Linear Algebra -> Real Analysis / Complex Analysis / Functional Analy
 
 - *A Hilbert Space Problem Book* Halmos
 
-Elementary Probability (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Papoulis) -> Probability Theory (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Rosenthal, <ruby>வரதன்<rt>Varadhan</rt></ruby>)
+Elementary Probability (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Papoulis, Ross) -> Probability Theory (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Rosenthal, <ruby>வரதன்<rt>Varadhan</rt></ruby>, <ruby>伊藤清<rt>いとう きよし</rt></ruby>)
 
 - *Probability, Random Variables, and Random Processes (Schaum's Outlines)* HSU (許？徐？) Hwei Piao
 
