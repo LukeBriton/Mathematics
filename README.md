@@ -21,7 +21,7 @@ Calculus (Courant, Apostol, Spivak, <ruby>Фихтенго́льц<rt>Fikhtengol
 
 Algebra (Godement, Chapter 0, Hungerford, Artin, Vinberg, Bourbaki, 李文威, Кострикин) / Abstract Algebra (Dummit)
 
-- Linear Algebra (Halmos, LADW, Lax) / Higher Algebra (李炯生, 丘维声) -> Advanced Linear Algebra (张贤科, 黎景辉) / Matrix Theory (No interest)
+- Linear Algebra (Halmos, LADW, Lax) / Higher Algebra (李炯生, 丘维声) -> Advanced Linear Algebra (张贤科, 黎景辉, Roman) / Matrix Theory (张贤达 No interest, but there is a need to know.😓)
 - Category Thoery (Milewski, Leinster, Riehl, Lawvere)
 - Geometries (<ruby>Сосинский<rt>Sossinski</rt></ruby>)
 - *Half of Advanced Algebra (With Hints)* XIONG Rui 半本高代习题集（带提示的那种) 熊锐
