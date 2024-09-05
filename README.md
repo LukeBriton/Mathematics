@@ -74,3 +74,19 @@ Number Theory (Stillwell)
 I do not major in Mathematics and haven't received professional instructions on maths for a while. My enthusiasm for it has been quite worn down for a long time, partly due to my hatred for hateable boring math courses with relentless dumb damn exams, which sadly make me uninterested in doing a necessary amount of exercises. Also it's partly because of the situation that I struggle to persist in reading heavy tomes (especially those written in foreign languages), whereinto distraction, impatience and laziness easily trap me. That's why you won't find materials for advanced courses here — I haven't acquired their prerequisites yet.
 
 Still I'm struggling to find a way to learn maths without tears — no more cramming, no more "teaching to the test", no more motivationless knowledge born out of nowhere, no more countless tedious exercises... but following the creed „Wir müssen wissen. Wir werden wissen.“, to learn, « pour l'honneur de l'esprit humain ».
+
+## Quotations
+
+### Paul Halmos
+
+如何笔记，如何“抄书”：
+
+> Don't just read it; fight it!
+> Ask your own **questions**,
+> look for your own **examples**,
+> discover your own **proofs**.
+> Is the **hypothesis** necessary?
+> Is the **converse** true?
+> What happens in the **classical special case**?
+> What about the **degenerate cases**?
+> Where does the proof use the **hypothesis**?
