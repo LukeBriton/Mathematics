@@ -90,3 +90,13 @@ Still I'm struggling to find a way to learn maths without tears — no more cram
 > What happens in the **classical special case**?
 > What about the **degenerate cases**?
 > Where does the proof use the **hypothesis**?
+
+### Roger Godement
+
+assertion :
+
+> - (i) toute assertion qui n'est pas intégralement démontrée est potentiellement  fausse et n'est, au mieux, qu'une conjecture intéressante,
+> 
+> - (ii) utiliser une assertion non complètement démontrée pour en prouver d'autres augmente exponentiellement les risques d'erreur,
+> 
+> - (iii) c'est à l'auteur d'une assertion qu'incombe la charge de la démontrer
