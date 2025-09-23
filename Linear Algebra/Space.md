@@ -1,0 +1,1 @@
+The words generating, spanning and complete here are synonyms. I (Treil) personally prefer the term complete, because of my operator theory background. Generating and spanning are more often used in linear algebra textbooks.
