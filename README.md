@@ -10,6 +10,18 @@ Mathematics is all I need.
 
 ## Resources 🚧
 
+[如何选择一本适合你的《数学分析》教科书？北京某高校数学老师为你揭示选书的秘密_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1xp4y1e7Nh/)
+
+待考：[有哪些数学书可以被称为「神作」？ - 知乎](https://www.zhihu.com/question/385578409)
+
+待考：[Math and Science - Subjects, Videos Lectures and Books](https://www.celsiuselements.com/)
+
+待考：[Recomended reading for the undergrad category theorist](https://gist.github.com/Nikolaj-K/282515e58c1c14de2e25222065f77a0a)
+
+待考：[Categories — fuller list of lecture notes and books](https://www.logicmatters.net/categories/categories-lists/)
+
+待考：[learn-tt: A collection of resources for learning type theory and type theory adjacent fields.](https://github.com/jozefg/learn-tt)
+
 ~~精通教材学，松鼠症患者。下载过不等于看过，看过不等于核实过。~~
 
 Calculus (Courant, Apostol, Spivak, <ruby>Фихтенго́льц<rt>Fikhtengol'ts</rt></ruby>) -> Analysis (Godement, Amann, Rudin, Loomis, Dieudonné, 张筑生, 梅加强, 于品, 邹应, 徐森林, <ruby>小平邦彦<rt>こだいら くにひこ</rt></ruby>, <ruby>高木貞治<rt>たかぎ ていじ</rt></ruby>, <ruby>Хи́нчин<rt>Khinchin</rt></ruby>, <ruby>Зорич<rt>Zorich</rt></ruby>)
@@ -19,7 +31,7 @@ Calculus (Courant, Apostol, Spivak, <ruby>Фихтенго́льц<rt>Fikhtengol
 - *Problems and Theorems in Analysis* (Pólya), *Problems in Mathematical Analysis* (Biler)
 - 齊震宇 臺大
 
-Algebra (Godement, Chapter 0, Hungerford, Artin, Vinberg, Bourbaki, 李文威, Кострикин) / Abstract Algebra (Dummit)
+Algebra (Godement, Chapter 0, Hungerford, Artin, Vinberg, Bourbaki, 李文威, 北师大, Кострикин) / Abstract Algebra (Dummit)
 
 - Linear Algebra (Halmos, LADW, Lax) / Higher Algebra (李炯生, 丘维声) -> Advanced Linear Algebra (张贤科, 黎景辉, Roman) / Matrix Theory (张贤达 No interest, but there is a need to know.😓)
 - Category Thoery (Milewski, Leinster, Riehl, Lawvere)
@@ -29,12 +41,15 @@ Algebra (Godement, Chapter 0, Hungerford, Artin, Vinberg, Bourbaki, 李文威, �
 
 Set Theory (Halmos, Jech, Enderton)
 
+Category Theory
+
 Topology (Kelley, Simmons, Munkres, Morris, Bradley, nLab)
 
 - *Counterexamples in Topology*, Steen
 
-Analysis + Linear Algebra -> Real Analysis / Complex Analysis / Functional Analysis (Halmos)
+Analysis + Linear Algebra -> Real Analysis (Folland) / Complex Analysis / Functional Analysis (Halmos, <ruby>Колмого́ров<rt>Kolmogorov</rt></ruby>, Lax, )
 
+- *Introduction to Hilbert Space, and the Theory of Spectral Multiplicity* Halmos
 - *A Hilbert Space Problem Book* Halmos
 
 Elementary Probability (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Papoulis, Ross) -> Probability Theory (<ruby>鍾開萊<rt>Chung Kai-Lai</rt></ruby>, Rosenthal, <ruby>வரதன்<rt>Varadhan</rt></ruby>, <ruby>伊藤清<rt>いとう きよし</rt></ruby>)
@@ -73,9 +88,19 @@ Number Theory (Stillwell)
 
 I do not major in Mathematics and haven't received professional instructions on maths for a while. My enthusiasm for it has been quite worn down for a long time, partly due to my hatred for hateable boring math courses with relentless dumb damn exams, which sadly make me uninterested in doing a necessary amount of exercises. Also it's partly because of the situation that I struggle to persist in reading heavy tomes (especially those written in foreign languages), whereinto distraction, impatience and laziness easily trap me. That's why you won't find materials for advanced courses here — I haven't acquired their prerequisites yet.
 
-Still I'm struggling to find a way to learn maths without tears — no more cramming, no more "teaching to the test", no more motivationless knowledge born out of nowhere, no more countless tedious exercises... but following the creed „Wir müssen wissen. Wir werden wissen.“, to learn, « pour l'honneur de l'esprit humain ».
+- [ ] Still I'm struggling to find a way to learn maths without tears — no more cramming, no more "teaching to the test", no more motivationless knowledge born out of nowhere, no more countless tedious exercises... but following the creed „Wir müssen wissen. Wir werden wissen.“, to learn, « pour l'honneur de l'esprit humain ».
 
 ## Quotations
+
+> μὴ εἶναι βασιλικὴν ἀτραπὸν ἐπί γεωμετρίαν
+> 
+> Non est regia \[inquit Euclides\] ad Geometriam via
+> 
+> There is no royal road to geometry.
+> 
+> 几何无王者之道。
+
+> _Superest ut ex iisdem principiis doceamus constitutionem Systematis Mundani_.
 
 ### Paul Halmos
 
@@ -95,7 +120,7 @@ Still I'm struggling to find a way to learn maths without tears — no more cram
 
 assertion :
 
-> - (i) toute assertion qui n'est pas intégralement démontrée est potentiellement  fausse et n'est, au mieux, qu'une conjecture intéressante,
+> - (i) toute assertion qui n'est pas intégralement démontrée est potentiellement fausse et n'est, au mieux, qu'une conjecture intéressante,
 > 
 > - (ii) utiliser une assertion non complètement démontrée pour en prouver d'autres augmente exponentiellement les risques d'erreur,
 > 
