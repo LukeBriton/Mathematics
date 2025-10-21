@@ -1,0 +1,11 @@
+[Complete metric space](https://en.wikipedia.org/wiki/Complete_metric_space)
+
+The space $\mathbb{R}$ of real numbers and the space $\mathbb{C}$ of [complex numbers](https://en.wikipedia.org/wiki/Complex_number "Complex number") (with the metric given by the absolute difference) are complete, and so is [Euclidean space](https://en.wikipedia.org/wiki/Euclidean_space "Euclidean space") $\mathbb{R}^n$, with the [usual distance](https://en.wikipedia.org/wiki/Euclidean_distance "Euclidean distance") metric. In contrast, [infinite-dimensional](https://en.wikipedia.org/wiki/Dimension_\(vector_space\) "Dimension (vector space)") [normed vector spaces](https://en.wikipedia.org/wiki/Normed_vector_space "Normed vector space") may or may not be complete; those that are complete are [Banach spaces](https://en.wikipedia.org/wiki/Banach_space "Banach space"). The space $C[a, b]$ of [continuous real-valued functions on a closed and bounded interval](https://en.wikipedia.org/wiki/Continuous_functions_on_a_compact_Hausdorff_space "Continuous functions on a compact Hausdorff space") is a Banach space, and so a complete metric space, with respect to the [supremum norm](https://en.wikipedia.org/wiki/Supremum_norm "Supremum norm"). However, the supremum norm does not give a norm on the space $C(a, b)$ of continuous functions on $(a, b)$, for it may contain [unbounded functions](https://en.wikipedia.org/wiki/Bounded_function "Bounded function"). Instead, with the [topology](https://en.wikipedia.org/wiki/Topological_space "Topological space") of [compact convergence](https://en.wikipedia.org/wiki/Compact_convergence "Compact convergence"), $C(a, b)$ can be given the structure of a [Fréchet space](https://en.wikipedia.org/wiki/Fr%C3%A9chet_space "Fréchet space"): a [locally convex topological vector space](https://en.wikipedia.org/wiki/Locally_convex_topological_vector_space "Locally convex topological vector space") whose topology can be induced by a complete [translation-invariant](https://en.wikipedia.org/wiki/Metric_space#Normed_vector_spaces "Metric space") metric.
+
+[Is the absolute value function a metric? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1893283/is-the-absolute-value-function-a-metric)
+
+$|x| = \|x\|_1 = \|x\|_2 = \|x\|_{\infty}$
+
+#### Neighbourhood
+
+内有开球
