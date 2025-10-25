@@ -1,6 +1,4 @@
-# Tensor
-
-## Block Matrix
+#### Block Matrix
 
 [linear algebra - Block matrices and tensor product notations. - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4458886/block-matrices-and-tensor-product-notations)
 
@@ -14,13 +12,13 @@ represent that 3D/4D matrix just as a simple block matrix? maybe I am
 being sloppy with the definitions but is just to maybe have an intuition
  of what is going on.
 
-## Kronecker Product
+#### Kronecker Product
 
 [Kronecker product - Wikipedia](https://en.wikipedia.org/wiki/Kronecker_product)
 
 In [mathematics](https://en.wikipedia.org/wiki/Mathematics "Mathematics"), the **Kronecker product**, sometimes denoted by ⊗, is an [operation](https://en.wikipedia.org/wiki/Operation_(mathematics) "Operation (mathematics)") on two [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics) "Matrix (mathematics)") of arbitrary size resulting in a [block matrix](https://en.wikipedia.org/wiki/Block_matrix "Block matrix"). It is a specialization of the [tensor product](https://en.wikipedia.org/wiki/Tensor_product "Tensor product") (which is denoted by the same symbol) from vectors to matrices and gives the matrix of the [tensor product](https://en.wikipedia.org/wiki/Tensor_product "Tensor product") linear map with respect to a standard choice of [basis](https://en.wikipedia.org/wiki/Basis_(linear_algebra) "Basis (linear algebra)"). The Kronecker product is to be distinguished from the usual [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication "Matrix multiplication"), which is an entirely different operation. The Kronecker product is also sometimes called **matrix direct product**.
 
-### Definition
+##### Definition
 
 If $A$ is an $m × n$ matrix and $B$ is a $p × q$ matrix, then the Kronecker product $A \otimes B$ is the $pm × qn$ block matrix:
 
@@ -32,7 +30,7 @@ $$
 \end{bmatrix},
 $$
 
-### Example
+##### Example
 
 ```latex
 % \hline not working at end of line
@@ -97,7 +95,7 @@ $$
 \end{equation*}
 $$
 
-## Matrix Multiplication, Tensor Contraction
+#### Matrix Multiplication, Tensor Contraction
 
 [Reddit - Why isn't Tensor Multiplication defined like Matrix Multiplication is? : r/math](https://www.reddit.com/r/math/comments/y39whq/why_isnt_tensor_multiplication_defined_like/)
 
@@ -115,7 +113,7 @@ $$
 
 Related: [Tensor contraction - Wikipedia](https://en.wikipedia.org/wiki/Tensor_contraction)
 
-### Contraction in index notation
+##### Contraction in index notation
 
 In [tensor index notation](https://en.wikipedia.org/wiki/Tensor_index_notation "Tensor index notation"), the basic contraction of a vector and a dual vector is denoted by
 
@@ -198,15 +196,15 @@ $$
 
 whose rank is 2.
 
-### Direct Sum -> Tensor Product
+##### Direct Sum -> Tensor Product
 
 Refer to *Linear Algebra: Finite-Dimensional Vector Spaces* (Halmos) for motivations. (TODO)
 
 [Direct Sum vs. Direct Product vs. Tensor Product - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1334965/direct-sum-vs-direct-product-vs-tensor-product) (TODO)
 
-## Terminology
+#### Terminology
 
-### ✨ [Relationship between a tensor and the tensor product](https://math.stackexchange.com/questions/4537060/relationship-between-a-tensor-and-the-tensor-product) ✨
+##### ✨ [Relationship between a tensor and the tensor product](https://math.stackexchange.com/questions/4537060/relationship-between-a-tensor-and-the-tensor-product) ✨
 
 **Short answer**: To a mathematician, a tensor is just an element of a tensor product. As you ask in the comments, it is correct to say that a tensor is to a tensor product what a vector is to a vector space.
 
@@ -236,7 +234,7 @@ Additionally sense 2 is more sophisticated than it appears, because we have the 
 
 and any of these representations may be appropriate depending on context.
 
-### ✨ [machine learning - Why the sudden fascination with tensors? - Cross Validated](https://stats.stackexchange.com/questions/198061/why-the-sudden-fascination-with-tensors) ✨
+##### ✨ [machine learning - Why the sudden fascination with tensors? - Cross Validated](https://stats.stackexchange.com/questions/198061/why-the-sudden-fascination-with-tensors) ✨
 
 So in machine learning / data processing *a tensor* appears to be simply defined as a multidimensional numerical array. An example of such a 3D tensor would be 1000 video frames of $640×480$ size. A usual $n×p$ data matrix is an example of a 2D tensor according to this definition.
 
@@ -258,7 +256,7 @@ And indeed, the common notation is to write $X∈\mathbb{R}^{n×p}$, where $\mat
 
 Instead, they are multidimensional generalizations of matrices. Unfortunately, there is no established mathematical term for that, so it seems that this new meaning of "tensor" is now here to stay.
 
-### ✨ [linear algebra - How would you explain a tensor to a computer scientist? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4861085/how-would-you-explain-a-tensor-to-a-computer-scientist) ✨
+##### ✨ [linear algebra - How would you explain a tensor to a computer scientist? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4861085/how-would-you-explain-a-tensor-to-a-computer-scientist) ✨
 
 A sound mathematical definition of a tensor product is not trivial, certainly not trivial to understand. Then working with tensors in addition also requires to grasp the concept of a vector space and its dual, and so on. That is not an obvious, or productive, path to take for a computer scientist, even though only an understanding of all this 
 will reveal the *why* behind tensor operations that can be found in software libraries.
@@ -279,7 +277,7 @@ useful in a lot of applications. For example, most of the operations in a popula
 Of course, there are also some not so trivial operations on certain tensors, such as inversion or $QR$ factorization, and so on. However, understanding how a library supports the operations above will make it much easier to understand. 
 The often countless functions that a library offers are mostly just clever and optimized combinations of these basic operations. For example, a matrix multiplication is a combination of a free tensor product and a contraction. The trace of a square matrix is a contraction. And so on.
 
-### ✨ [linear algebra - What is the difference between a tensor product and an outer product? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1951946/what-is-the-difference-between-a-tensor-product-and-an-outer-product) ✨
+##### ✨ [linear algebra - What is the difference between a tensor product and an outer product? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1951946/what-is-the-difference-between-a-tensor-product-and-an-outer-product) ✨
 
 I have seen the tensor product written as
 
@@ -357,7 +355,7 @@ $V⊗V≃V⊗V^∗≃Hom(V,V)$, where the first isomorphism comes from the isomo
 
 This is mathematically speaking. I don't know why one is more appropriate than the other in your context. What I can say is that the second way is very useful, because it allows us to translate an endomorphism in terms of something structurally and algebraically rich such as the tensor product. The first one seems to be simply a down to earth immediate way to realize the tensor product as an array.
 
-### ✨ [abstract algebra - An Introduction to Tensors - Mathematics Stack Exchange](https://math.stackexchange.com/questions/10282/an-introduction-to-tensors?noredirect=1&lq=1) ✨
+##### ✨ [abstract algebra - An Introduction to Tensors - Mathematics Stack Exchange](https://math.stackexchange.com/questions/10282/an-introduction-to-tensors?noredirect=1&lq=1) ✨
 
 As a physics student, I've come across mathematical objects called **tensors** in several different contexts. Perhaps confusingly, I've also been given both the mathematician's and physicist's definition, which I believe are slightly different.
 
@@ -421,7 +419,7 @@ So it's no wonder that one can become a little confused when trying to compare d
 
 **There are many other good answers to this question, just TODO for the moment.**
 
-### Many Other Questions
+#### Many Other Questions
 
 [terminology - Tensors in neural network literature: what's the simplest definition out there? - Cross Validated](https://stats.stackexchange.com/questions/233253/tensors-in-neural-network-literature-whats-the-simplest-definition-out-there)
 
@@ -435,7 +433,7 @@ So it's no wonder that one can become a little confused when trying to compare d
 
 [hilbert spaces - How do outer products differ from tensor products? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1757901/how-do-outer-products-differ-from-tensor-products?rq=1) 力有所不逮
 
-## Bilinear Form
+#### Bilinear Form
 
 [linear algebra - Is it misleading to think of rank-2 tensors as matrices? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2400/is-it-misleading-to-think-of-rank-2-tensors-as-matrices?rq=1)
 
@@ -542,7 +540,7 @@ In general, if $V$ is infinite dimensional then $dim(V^∗)>dim(V)$. One can see
 
 [linear algebra - extending bilinear form with tensor product - Mathematics Stack Exchange](https://math.stackexchange.com/questions/3201177/extending-bilinear-form-with-tensor-product)
 
-## Rank
+#### Rank
 
 [matrices - Is the rank of a Tensor different from the rank of a Matrix? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2245849/is-the-rank-of-a-tensor-different-from-the-rank-of-a-matrix)
 
@@ -577,7 +575,7 @@ On a basic level, the statement "a vector is a rank 1 tensor, and a matrix is a 
 
 [matrices - Are rank 3 tensors always cubes? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/3817753/are-rank-3-tensors-always-cubes)
 
-## Miscellaneous
+#### Miscellaneous
 
 [matrices - Why matrix of rank one can be written as a tensor product of two vectors? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1916619/why-matrix-of-rank-one-can-be-written-as-a-tensor-product-of-two-vectors)
 
@@ -597,9 +595,9 @@ where $\vec{b}^T=(b_1,…,b_N)$.
 
 [abstract algebra - Rank and determinant of a tensor product of matrices - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2259063/rank-and-determinant-of-a-tensor-product-of-matrices)
 
-## PyTorch
+#### PyTorch
 
-### torch.dot()
+##### torch.dot()
 
 [python - How do I multiply matrices in PyTorch? - Stack Overflow](https://stackoverflow.com/questions/44524901/how-do-i-multiply-matrices-in-pytorch)
 
@@ -607,11 +605,11 @@ where $\vec{b}^T=(b_1,…,b_N)$.
 
 [`torch.matmul`](https://pytorch.org/docs/master/torch.html#torch.matmul) performs matrix multiplications if both arguments are `2D` and computes their dot product if both arguments are `1D`. For inputs of such dimensions, its behaviour is the same as `np.dot`. It also lets you do broadcasting or `matrix x matrix`, `matrix x vector` and `vector x vector` operations in batches.
 
-### torch.mm(), torch.matmul(), torch.mul(), torch.bmm()
+##### torch.mm(), torch.matmul(), torch.mul(), torch.bmm()
 
 [python 3.x - What's the difference between torch.mm, torch.matmul and torch.mul? - Stack Overflow](https://stackoverflow.com/questions/73924697/whats-the-difference-between-torch-mm-torch-matmul-and-torch-mul)
 
-#### 1. torch.mm(), torch.matmul(), torch.mul()
+###### 1. torch.mm(), torch.matmul(), torch.mul()
 
 In short:
 
@@ -700,7 +698,7 @@ Also it may be useful to read about broadcasting:
 
 [Broadcasting semantics &mdash; PyTorch 2.3 documentation](https://pytorch.org/docs/stable/notes/broadcasting.html#broadcasting-semantics)
 
-#### 2. torch.bmm()
+###### 2. torch.bmm()
 
 I want to add the [introduction of `torch.bmm`](https://pytorch.org/docs/stable/generated/torch.bmm.html), which is batch matrix-matrix product.
 
@@ -723,7 +721,7 @@ res = torch.bmm(input, mat2)
 res.size()  # torch.Size([10, 3, 5])
 ```
 
-#### Why do we do batch matrix-matrix product?
+###### Why do we do batch matrix-matrix product?
 
 [deep learning - Why do we do batch matrix-matrix product? - Stack Overflow](https://stackoverflow.com/questions/50826644/why-do-we-do-batch-matrix-matrix-product)
 
@@ -747,7 +745,7 @@ to multiply with the encoder's hidden state `B x S x h` by transposing first and
 
 This context vector (`B x h`) is usually concatenated to decoder's hidden state (`B x 1 x h`, squeeze dim=1) to predict the next token.
 
-### torch.tensordot()
+##### torch.tensordot()
 
 [multiplication - Multidimensional tensor product in PyTorch - Stack Overflow](https://stackoverflow.com/questions/63180601/multidimensional-tensor-product-in-pytorch)
 
@@ -799,7 +797,7 @@ tensor([[  7.7193,  -2.4867, -10.3204],
 
 [Pytorch: Tensordot with non-contracting position - Stack Overflow](https://stackoverflow.com/questions/75410741/pytorch-tensordot-with-non-contracting-position)
 
-### torch.kron()
+##### torch.kron()
 
 [torch.kron — PyTorch 2.3 documentation](https://pytorch.org/docs/stable/generated/torch.kron.html)
 
@@ -842,7 +840,7 @@ for xx, yy, zz in zip(x, y, z):
     assert zz.allclose(torch.kron(xx, yy))
 ```
 
-### torch.einsum()
+##### torch.einsum()
 
 [Einsum is All you Need - Einstein Summation in Deep Learning](https://rockt.github.io/2018/04/30/einsum) ✨**VERY DETAILED, HIGHLY RECOMMENDED**✨
 
