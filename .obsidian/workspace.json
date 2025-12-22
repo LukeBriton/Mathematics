@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "9d78f6d87d803e8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "89c31de59734dba4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2db10b8e52f4c199",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nouvel onglet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "49119c6aca165d17",
+    "type": "split",
+    "children": [
+      {
+        "id": "a86e1c0f2c4ecb6a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23736eab38be1604",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "数乘”为",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "3523b32f156613fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signets"
+            }
+          },
+          {
+            "id": "607cf8d3cc541bb0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 216.50043487548828
+  },
+  "right": {
+    "id": "c31667e5590071d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac0b166e44787000",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1d62a236694bc75",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "f22acb27651ba6f0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vue graphique"
+            }
+          },
+          {
+            "id": "9b29e7483ebaf799",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "beb916f3330620e4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétroliens"
+            }
+          },
+          {
+            "id": "a0afe9001c321255",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants"
+            }
+          },
+          {
+            "id": "71e6643aa4e539dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 364.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Create new base": false,
+      "webpage-html-export:Export as HTML": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "2db10b8e52f4c199",
+  "lastOpenFiles": [
+    "Linear Algebra/Problem Book/4  Transformations.md",
+    "Linear Algebra/Problem Book/2  Vectors.md",
+    "Linear Algebra/Space.md",
+    "Linear Algebra/Inner product space.md",
+    "Linear Algebra/Bilinear Form.md",
+    "Linear Algebra/Transformations.md",
+    "Linear Algebra/Vector.md",
+    "Linear Algebra/Vector Space.md",
+    "Sans titre 1.canvas",
+    "Sans titre.canvas",
+    "Sans titre.md",
+    "README.md",
+    "Analyse/Vol. I/Préface.md",
+    "Mathematics.html",
+    "Geometries/Preface.md",
+    "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
+    "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
+    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
+    "Analyse/Vol. I/Chap. I/Ensembles et Fonctions.md",
+    "Game Theory/Economic Problem.md",
+    "AI/Convolution.md",
+    "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
+    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
+    "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
+    "Dubia.md",
+    "Abstract Algebra/Algebra over a field.md",
+    "Analysis/Number Systems/Complex Numbers.md",
+    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
+    "Set Theory/NBG.md",
+    "Sans titre.base",
+    "Analyse/Vol. I/Chap. III/pdf/Continuous.pdf",
+    "Analyse/Vol. I/Chap. III/pdf/Continuous.svg",
+    "未命名.canvas",
+    "Combinatorics",
+    "Topology",
+    "Optimization",
+    "Analysis/Number Systems",
+    "Sans titre 1.base",
+    "Sans titre 2.base",
+    "copilot/copilot-custom-prompts",
+    "Analyse/Vol. I/Chap. III/img/Continuous.png"
+  ]
+}
