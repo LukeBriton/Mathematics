@@ -10,7 +10,7 @@
 
 #### Algebraic Structure Ladder (Set → Field)
 
-Set $\xrightarrow{\text{Op、结合性、幺元}}$  Monoid $\xrightarrow{\text{可逆}}$ Group $\xrightarrow{\text{交换、+、0}}$ Additive Group $\xrightarrow{\text{乘法半群+分配律}}$ Rng $\xrightarrow{\text{1}}$ Ring $\xrightarrow{乘法交换}$ Commutative Ring $\xrightarrow{无零因子/乘法可消去}$ Integral Domain $\xrightarrow{乘法可逆}$ Field
+Set $\xrightarrow{\text{Op、封闭性、结合性、幺元}}$  Monoid $\xrightarrow{\text{可逆}}$ Group $\xrightarrow{\text{交换、+、0}}$ Additive Group $\xrightarrow{\text{乘法半群+分配律}}$ Rng $\xrightarrow{\text{1}}$ Ring $\xrightarrow{乘法交换}$ Commutative Ring $\xrightarrow{无零因子/乘法可消去}$ Integral Domain $\xrightarrow{乘法可逆}$ Field
 
 Even more succinctly: a field is a [commutative ring](https://en.wikipedia.org/wiki/Commutative_ring "Commutative ring") where 0 ≠ 1 and all nonzero elements are [invertible](https://en.wikipedia.org/wiki/Unit_\(ring_theory\) "Unit (ring theory)") under multiplication.
 
@@ -82,6 +82,9 @@ Additive Group $\xrightarrow{\text{（环）R的纯量乘法（分配律、相�
 Banach Space := Complete Normed Vector Space
 
 Hilbert Space := Complete Inner Product Space
+#### Algebra Ladder
+
+$K$-Vector Space $\mathcal{A}$ $\xrightarrow{\text{双线性运算}\mathcal{A}\times\mathcal{A}\to\mathcal{A}\text{（分配律、相容性）}}$ $K$-Algebra $\mathcal{A}$ $\xrightarrow{\mathbb{K}、‖a‖‖b‖\le‖ab‖}$ Normed Algebra $\xrightarrow{\text{Banach}}$ Banach Algebra $\xrightarrow{‖e‖=1}$ Banach Algebra with unity
 
 #### Module-like
 

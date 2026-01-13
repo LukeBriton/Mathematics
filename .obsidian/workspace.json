@@ -4,17 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "a0dc6617a9419be6",
+        "id": "42be9885cef887dd",
         "type": "tabs",
         "children": [
           {
-            "id": "4c20969819c9bdc3",
+            "id": "9a6f2fa0b546b7b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Combinatorics/Generating Function.md",
+                "bFile": "Combinatorics/Generating Function.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Generating Function"
+            }
+          },
+          {
+            "id": "f021c57b8443d6c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Combinatorics/Inclusion–Exclusion Principle.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Inclusion–Exclusion Principle"
             }
           }
         ]
@@ -36,8 +64,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "数乘”为",
-                "matchingCase": false,
+                "query": "Permutations and Combinations#16",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -75,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50043487548828
+    "width": 272.5040512084961
   },
   "right": {
     "id": "c31667e5590071d6",
@@ -170,51 +198,51 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 422.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
-      "bases:Create new base": false,
       "webpage-html-export:Export as HTML": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b29e7483ebaf799",
+  "active": "9a6f2fa0b546b7b8",
   "lastOpenFiles": [
+    "Combinatorics/Applications of Group Theory to Combinatorics.md",
+    "Combinatorics/Generating Function.md",
+    "Combinatorics/Inclusion–Exclusion Principle.md",
+    "Combinatorics/Multinomial Coefficient.md",
+    "Combinatorics/Permutations and Combinations.md",
+    "Combinatorics/Principe des Tiroirs.md",
+    "Combinatorics/Recurrence Relation.md",
+    "Combinatorics/Stirling Numbers.md",
+    "Combinatorics/球、盒.md",
+    "Analysis/Convergence.md",
+    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
+    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
+    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
+    "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
+    "Analysis/Continuous Functions.md",
+    "test.md",
+    "Linear Algebra/Vector Space.md",
+    "AI/Convolution.md",
+    "Category Theory/Linguistics.md",
+    "Category Theory/Category.md",
+    "README.md",
+    "Game Theory/A Course in Game Theory.md",
+    "Abstract Algebra/Group.md",
+    "Sans titre.canvas",
     "Analyse/Vol. I/Préface.md",
     "Linear Algebra/Problem Book/4  Transformations.md",
     "Geometries/Preface.md",
-    "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
-    "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
-    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
-    "Analyse/Vol. I/Chap. I/Ensembles et Fonctions.md",
-    "Linear Algebra/Problem Book/2  Vectors.md",
-    "Game Theory/Economic Problem.md",
-    "AI/Convolution.md",
-    "Linear Algebra/Space.md",
-    "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
-    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
-    "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
-    "Dubia.md",
-    "Abstract Algebra/Algebra over a field.md",
-    "Analysis/Number Systems/Complex Numbers.md",
-    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
-    "Set Theory/NBG.md",
-    "Set Theory/ZFC.md",
-    "Set Theory/TG.md",
-    "Abstract Algebra/Ring.md",
-    "Abstract Algebra/Field.md",
-    "Abstract Algebra/Algebraic Structures.md",
-    "Analysis/Number Systems/Natural Numbers.md",
-    "Analysis/Number Systems/Real Numbers.md",
     "Sans titre 1.canvas",
-    "Sans titre.canvas",
     "Mathematics.html",
     "Sans titre.base",
     "Analyse/Vol. I/Chap. III/pdf/Continuous.pdf",
