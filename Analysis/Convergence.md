@@ -1,6 +1,45 @@
+> Der Begriff der Konvergenz erlaubt uns
+> - to add together infinite sets of numbers (or vectors)
+> - unendlich viele (Rechen-)Operationen durchzuführen
+> was die Analysis von der Algebra unterscheidet.
+
 #### Sequences
 
-- vector space $s=s(\mathbb{K})=\mathbb{K}^\mathbb{N}$
+- sequence/suite/Folge
+	$(x_{n}):=\varphi: \mathbb{N} \to X$
+	$(x_j)_{j \ge m}:=\psi: m + \mathbb{N} \to X$
+
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzcd}
+\mathbb N \arrow[rr, "\varphi"'] \arrow[dr, "s_m(n)=m+n"'] & & X \\  
+& m+\mathbb N \arrow[ur, "\psi"'] &
+\end{tikzcd}
+
+\begin{tikzcd}
+\mathbb N \arrow[rr, "n\mapsto x_{m+n}"'] \arrow[dr, "n\mapsto m+n"'] & & X \\  
+& \{m,m+1,m+2,\dots\} \arrow[ur, "j\mapsto x_j"'] &
+\end{tikzcd}
+\end{document}
+```
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzcd} \mathbb N \arrow[r, "s_m", "\sim"'] & m+\mathbb N \arrow[r, "\psi"] & X \end{tikzcd}
+\end{document}
+```
+- vector space of all number sequences
+	$s=s(\mathbb{K})=\mathbb{K}^\mathbb{N}$
+- Eigenschaft
+	- fast alle: $\exists m\in \mathbb{N}, \forall n \ge m$, $E(x_n)$ wahr ist.
+	- unendlich viele: $\exists N\in \mathbb{N}, \text{Anz}(N) = \infty$ und gilt $E(x_n), n\in N$
+		- Anzahl
+- subsequence/sous-suite/Teilfolge
+	Es sei $\varphi = (x_n)\in X^\mathbb{N}$, und $\psi:\mathbb{N}\to \mathbb{N}$ sei strikt wachsend. Dann heißt $\varphi \circ \psi :=(x_{n_k})_{k \in \mathbb{N}} ∈ X^\mathbb{N}$ Teilfolge von $\varphi$, wobei wir $n_k := ψ(k)$ gesetzt haben.
+
 - 收敛列加法、数乘 
 	the convergent sequences form a subspace of $s$.
 $$
@@ -19,12 +58,20 @@ $$
 https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-42/issue-1/Topologies-on-sequences-spaces/pjm/1102968025.pdf
 
 - 非零收敛列倒数
-
+- Für $m \in \mathbb{N}^\times$ seien
+	$s(\mathbb{K}^m) := \text{Abb}(\mathbb{N}, \mathbb{K}^m) = (\mathbb{K}^m)^{\mathbb{N}}$
+	- Abbildung
+	$c(\mathbb{K}^m) := \{ (x_n) \in s(\mathbb{K}^m) ; (x_n) \text{ ist konvergent} \} .$
+	- $c(\mathbb{K}^m)$ ist ein Untervektorraum von $s(\mathbb{K}^m)$.
+	- Die Abbildung $\lim : c(\mathbb{K}^m) \to \mathbb{K}^m, \quad (x_n) \mapsto \lim_{n \to \infty} (x_n)$  ist definiert und linear.
+	- Für $(\lambda_n) \in c(\mathbb{K})$ und $(x_n) \in c(\mathbb{K}^m)$ mit $\lambda_n \to \alpha$ und $x_n \to a$ gilt $\lambda_n x_n \to \alpha a$ in $\mathbb{K}^m$.
 #### Cluster Points
 
-- 任意邻域，无限多项。
-- 任意邻域，任意序号，总有项。
-- 任意 $\varepsilon$ ，任意序号后，总有项在开球里。
+> [!note] 聚点
+>- 任意邻域，总有无穷多项。
+>- 任意邻域，任意尾列，总有项。
+>- 任意 $ε$ ，任意尾列，总有项在 $ε$-开球里。
+>	任意 $ε$-开邻域 ，任意尾列，总有项。
 
 $$
 \varphi: \mathbb{N} \longleftrightarrow \mathbb{Q}, x_{n}:=\varphi(n)\implies\forall x\in \mathbb{R}\text{ is a cluster point of }(x_{n}).
@@ -32,32 +79,44 @@ $$
 
 #### Convergence of sequences
 
-- 任意邻域，几乎无穷多项。
-- 任意邻域，总有尾列。
-- 任意 $\varepsilon$，总有尾列在开球里。
+> [!note] 收敛
+>- 任意邻域，几乎所有项。
+>- 任意邻域，总有尾列。
+>- 任意 $\varepsilon$，总有尾列在 $ε$-开球里。
+> 	任意 $ε$-开邻域 ，总有尾列。
+	 收敛的条件比聚点更强。
 
-- 收敛的条件比聚点更强。
+- product metric on $X := X_1 \times \cdots \times X_m$, $(X_j, d_j)$, $1 \le j \le m$
+	$(x_n) = ((x_n^1, \dots, x_n^m))_{n \in \mathbb{N}}$
+	$a := (a^1, \dots, a^m)$
+	$\lim x_n \to a \iff \lim x_n^j \to a^j$.
+	- a sequence of vectors is convergent iff the sequences of its components are convergent (? by equivalence of metrics)
 
 - 收敛$\implies$有界
-
-- 收敛$\implies$有唯一聚点
-
+- 收敛$\implies$有唯一聚点/极限
+	有唯一聚点$\cancel{ \implies }$收敛
 - 有界+有聚点$\cancel{ \implies }$收敛
-
-[real analysis - Show a bound sequence with a cluster point is indeed convergent - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1014909/show-a-bound-sequence-with-a-cluster-point-is-indeed-convergent)
-
-[general topology - In what metric spaces does bounded + unique limit point imply convergence of a sequence? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4762540/in-what-metric-spaces-does-bounded-unique-limit-point-imply-convergence-of-a-s)
-
-[ca.classical analysis and odes - Sequence that converge if they have an accumulation point - MathOverflow](https://mathoverflow.net/questions/24508/sequence-that-converge-if-they-have-an-accumulation-point)
-
-[Simple examples of proper metric spaces? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/792253/simple-examples-of-proper-metric-spaces)
+	- [real analysis - Show a bound sequence with a cluster point is indeed convergent - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1014909/show-a-bound-sequence-with-a-cluster-point-is-indeed-convergent)
+	- [general topology - In what metric spaces does bounded + unique limit point imply convergence of a sequence? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4762540/in-what-metric-spaces-does-bounded-unique-limit-point-imply-convergence-of-a-s)
+	- [ca.classical analysis and odes - Sequence that converge if they have an accumulation point - MathOverflow](https://mathoverflow.net/questions/24508/sequence-that-converge-if-they-have-an-accumulation-point)
+	- [Simple examples of proper metric spaces? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/792253/simple-examples-of-proper-metric-spaces)
 
 - 收敛$\implies$子列收敛于聚点
-
 - 是聚点 $\Longleftrightarrow$ 有子列收敛焉
-
+	$$
+	n_0 := 0, \quad n_k := \min\{m \in \mathbb{N} ; m > n_{k-1}, x_m \in \mathbb{B}(a, 1/k)\}, \quad k \in \mathbb{N}^\times.
+	$$
+	Nun schließen wir aus dem Wohlordnungsprinzip, daß $n_k$ für jedes $k ∈ \mathbb{N}^×$ wohldefiniert ist.
+	
 - 比较审敛
-
+	Es seien $(x_n)$, $(y_n)$ konvergente Folgen in $\mathbb{R}$. Ferner gelte $x_n \le y_n$ für unendlich viele $n \in \mathbb{N}$. Dann folgt:
+	$$
+	\lim x_n \le \lim y_n .
+	$$
+	- aus $x_n < y_n$ folgt nicht $\lim x_n < \lim y_n$.
+- 夹逼定理
+	Es seien $(x_n)$, $(y_n)$ und $(z_n)$ reelle Zahlenfolgen mit $x_n \le y_n \le z_n$ für fast alle $n \in \mathbb{N}$, und es gelte $\lim x_n = \lim z_n =: a$. Dann konvergiert auch $(y_n)$ gegen $a$.
+- 收敛 $\Longleftrightarrow$ 绝对值收敛
 - 收敛 $\Longleftrightarrow$ 各分量收敛 （little to be gained）
 	- 复数列收敛 $\Longleftrightarrow$ 实部、虚部收敛
 
@@ -66,24 +125,59 @@ $$
 
 - 收敛 $\implies$ Cauchy列
 	完备：Cauchy列 $\implies$ 收敛 
+
 #### Bounded Sets
 
-- $d(x,y)$ 上有界，$\sup{d(x,y)}$ 为直径。
+bounded/beschränkt
+- $d$-beschränkt/beschränkt in $X$ (bezüglich der Metrik $d$)
+	Eine Teilmenge $Y \subseteq X$, $\exists M > 0, \forall x, y \in Y, d(x, y) \le M$.
+	$\text{diam}(Y) := \sup\limits_{x,y \in Y} d(x, y)$
+	$d(x,y)$ 上有界，$\sup{d(x,y)}$ 为直径。
+- normbeschränkt/beschränkt in $E$
+	in dem von der Norm induzierten metrischen Raum beschränkt ist.
+	- $X \subseteq E$ ist beschränkt $\iff$ Es ein $r > 0$ gibt mit $X \subseteq r\mathbb{B}$.
 
 - 像集有界，数列有界
-	- 有界数列向量空间 $\mathscr{l}_{∞} := \mathscr{l}_{∞}(\mathbb{K}) := B(\mathbb{N}, \mathbb{K})$ 
-		supremum norm:  数列范数的上确界
-
-- 在其诱导度量空间中有界，则在赋范空间中有界
-
 - 像集有界，函数有界
-	- 有界函数向量空间 $B(X,E):=(B(X, E), ‖·‖_{∞}):=\{ u ∈ E^X ; u\text{ is bounded} \}$
-		$X$ 非空集，$(E, ‖·‖)$ 赋范向量空间，则$E^X$中，有界函数集 $B(X,E)$ 构成子空间。
-		supremum norm: $‖·‖_{∞}$  函数值范数的上确界
+	- Supremumsnorm
+		Für $u \in E^X$ setzen wir
+		$\|u\|_{\infty} := \|u\|_{\infty, X} := \sup\limits_{x \in X} \|u(x)\| \in \mathbb{R}^{+} \cup \{\infty\}.$
+
+有界数列向量空间 
+	$\ell_{\infty} := \ell_{\infty}(\mathbb{K}) := B(\mathbb{N}, \mathbb{K})$
+	$\|(x_n)\|_{\infty} = \sup_{n \in \mathbb{N}} |x_n|, \quad (x_n) \in \ell_{\infty}$
+
+有界函数向量空间
+	$B(X,E):=(B(X, E), ‖·‖_{∞}):=\{ u ∈ E^X ; u\text{ ist beschränkt} \}$ ist ein Untervektorraum von $E^X$
 	- $(E, ‖·‖)$ Banach $\implies$ $B(X,E)$ Banach
 	- $B(E, F ) ∩ \text{Hom}(E, F ) = {0}.$
 
+![[Fundamentals#Metric Space]]
 
+#### Normed Vector Space
+
+- norm/norme/Norm
+	$\|\cdot\| : E \to \mathbb{R}^+$ with 正定、正齐次/半范数、三角不等式/次可加
+- normierter Vektorraum $(E, \|\cdot\|)$
+- von der Norm induzierte Metrik
+	Es sei $E := (E, \|\cdot\|)$ ein normierter Vektorraum,
+	$d: E \times E \to \mathbb{R}^{+}, \quad (x, y) \mapsto \|x - y\|$
+	- Alle Aussagen die für metrische Räume gemacht wurden, auch für $E$. Insbesondere sind also die Begriffe „Umgebung“, „Häufungspunkt“ und „Konvergenz“ in $E$ wohldefiniert.
+	- Alle Aussagen bei denen *nicht* von der Körperstruktur von $\mathbb{K}$ oder der Ordnungsstruktur von $\mathbb{R}$ Gebrauch gemacht wurde, ohne weiteres auf Folgen in $E$ übertragen werden können.
+- umgekehrte Dreiecksungleichung
+- diskrete Metrik
+	Es auf jedem von 0 verschiedenen Vektorraum $V$ eine Metrik gibt, bezüglich derer $V$ beschränkt ist.
+	Hingegen folgt aus der positive Homogenität, daß es auf $V$ keine Norm geben kann, bezüglich derer $V$ normbeschränkt ist.
+- Betragsnorm $|\cdot|$ auf $\mathbb{K}$
+	$\mathbb{K} := (\mathbb{K}, |\cdot|)$
+- induzierte Norm
+- die Produktnorm auf $E := E_1 \times \dots \times E_m$, $(E_j, \|\cdot\|_j)$
+	$\|x\|_{\infty} := \max\limits_{1 \le j \le m} \|x_j\|_j, \quad  x = (x_1, \dots, x_m) \in E$
+	- Maximumsnorm
+		$|x|_{\infty} := \max\limits_{1 \le j \le m} |x_j|, \quad x = (x_1, \dots, x_m) \in \mathbb{K}^m.$
+[vector spaces - Difference between metric and norm made concrete: The case of Euclid - Mathematics Stack Exchange](https://math.stackexchange.com/questions/38634/difference-between-metric-and-norm-made-concrete-the-case-of-euclid)
+
+[general topology - Metric spaces and normed vector spaces - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1607957/metric-spaces-and-normed-vector-spaces)
 
 #### Topology
 

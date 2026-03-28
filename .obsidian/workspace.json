@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b3481e44b1ef67c8",
+        "id": "e18a5c377ca4dd8b",
         "type": "tabs",
         "children": [
           {
-            "id": "4d8919c9bafeb425",
+            "id": "8531475980d97304",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Analysis/Multivariable Differential Calculus.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Multivariable Differential Calculus"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -50,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Permutations and Combinations#16",
+                "query": "inner product space",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5040512084961
+    "width": 200
   },
   "right": {
     "id": "c31667e5590071d6",
@@ -156,39 +142,27 @@
             }
           },
           {
-            "id": "fe7cda7c3eaa3b8f",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
-            }
-          },
-          {
             "id": "71e6643aa4e539dd",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Analysis/Multivariable Differential Calculus.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Multivariable Differential Calculus"
+              "title": "Plan"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 399.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
@@ -196,41 +170,42 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "webpage-html-export:Export as HTML": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "bases:Créer une nouvelle base": false
     }
   },
-  "active": "4d8919c9bafeb425",
+  "active": "9b29e7483ebaf799",
   "lastOpenFiles": [
-    "Analysis/Integral Calculus in One Variable.md",
-    "Analysis/Multivariable Differential Calculus.md",
-    "Analysis/Number Systems/Number System.md",
-    "Analysis/Number Systems/Real Numbers.md",
-    "Analysis/Number Systems/Natural Numbers.md",
-    "Analysis/Number Systems/Complex Numbers.md",
+    "Topology/Fundamentals.md",
     "Analysis/Convergence.md",
-    "Analysis/Continuous Functions.md",
-    "Analysis/Metric Space.md",
-    "Analysis/Banach Space.md",
+    "Abstract Algebra/Algebraic Structures.md",
+    "Analysis/Measure Theory.md",
+    "Analysis/Normed Vector Space.md",
     "Analysis/Analysis.md",
+    "Analysis/Metric Space.md",
     "Combinatorics/Generating Function.md",
-    "Combinatorics/Applications of Group Theory to Combinatorics.md",
-    "陪集.md",
-    "AI/Convolution.md",
-    "AI/Tensor.md",
-    "Combinatorics/Inclusion–Exclusion Principle.md",
+    "Sans titre.base",
+    "Analysis/Number Systems/Natural Numbers.md",
+    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
     "Combinatorics/Multinomial Coefficient.md",
+    "Linear Algebra/Space.md",
+    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
+    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
+    "Analysis/Continuous Functions.md",
+    "Analysis/Banach Space.md",
+    "Linear Algebra/Vector Space.md",
     "Combinatorics/Permutations and Combinations.md",
     "Combinatorics/Principe des Tiroirs.md",
     "Combinatorics/Recurrence Relation.md",
-    "Combinatorics/Stirling Numbers.md",
-    "Combinatorics/球、盒.md",
-    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
-    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
-    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
+    "Linear Algebra/Vector.md",
+    "Analysis/Number Systems/Real Numbers.md",
+    "Analysis/Number Systems/Number System.md",
+    "Analysis/Number Systems/Complex Numbers.md",
+    "AI/Convolution.md",
+    "AI/Tensor.md",
     "Sans titre.canvas",
     "Sans titre 1.canvas",
     "Mathematics.html",
-    "Sans titre.base",
     "Analyse/Vol. I/Chap. III/pdf/Continuous.pdf",
     "Analyse/Vol. I/Chap. III/pdf/Continuous.svg",
     "未命名.canvas",
