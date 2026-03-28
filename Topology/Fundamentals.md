@@ -1,33 +1,3 @@
-#### Metric Space
-
-- metric/métrique/Metrik
-	$d: X \times X \to \mathbb{R}^+$ with 正定、对称、三角不等式/次可加性
-- metrischer Raum $(X, d)$
-- $\mathbb{K}$ has the natural metric
-	$\mathbb{K} \times \mathbb{K} \to \mathbb{R}^{+}, \quad (x, y) \mapsto |x - y|.$
-- induced metric & metric subspace
-- discrete metric
-	$d(x,y)=1-\delta_{xy}$
-- product metric on $X := X_1 \times \cdots \times X_m$, $(X_j, d_j)$, $1 \le j \le m$
-	$d(x, y) := \max\limits_{1 \le j \le m} d_j(x_j, y_j)$,
-	$x = (x_1, \dots, x_m) \in X$
-	$y = (y_1, \dots, y_m) \in X$
-	- $\mathbb{B}_X(a, r) = \prod\limits_{j=1}^{m} \mathbb{B}_{X_j}(a_j, r), \quad \bar{\mathbb{B}}_X(a, r) = \prod\limits_{j=1}^{m} \bar{\mathbb{B}}_{X_j}(a_j, r)$
-- umgekehrte Dreiecksungleichung
-- Umgebung von $a\in X$: 包含开球
-	- die Menge aller Umgebungen des Punktes: $\mathcal{U}(a) := \mathcal{U}_X(a) := \{ U \subseteq X ; U \text{ ist Umgebung von } a \} \subseteq \mathcal{P}(X) .$
-	- die offene/abgeschlossene $ε$-Umgebung von $a$:
-		$\mathbb{B}(a, ε)$ und $\bar{\mathbb{B}}(a, ε)$
-
-- equivalent metrics
-	Zwei Metriken $d_1$ und $d_2$ auf einer Menge $X$ heißen **äquivalent**, wenn es zu jedem $x \in X$ und jedem $\varepsilon > 0$ positive Zahlen $r_1$ und $r_2$ gibt mit
-	$$
-	\mathbb{B}_1(x, r_1) \subset \mathbb{B}_2(x, \varepsilon), \quad \mathbb{B}_2(x, r_2) \subset \mathbb{B}_1(x, \varepsilon).
-	$$
-	Hierbei bezeichnet $\mathbb{B}_j$ den Ball in $(X, d)$, $j = 1, 2$.
-
-[abstract algebra - Difference between "space" and "algebraic structure" - Mathematics Stack Exchange](https://math.stackexchange.com/questions/174108/difference-between-space-and-algebraic-structure)
-
 #### Openness
 
 der offene/abgeschlossene Ball

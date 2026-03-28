@@ -152,33 +152,6 @@ bounded/beschränkt
 	- $(E, ‖·‖)$ Banach $\implies$ $B(X,E)$ Banach
 	- $B(E, F ) ∩ \text{Hom}(E, F ) = {0}.$
 
-![[Fundamentals#Metric Space]]
-
-#### Normed Vector Space
-
-- norm/norme/Norm
-	$\|\cdot\| : E \to \mathbb{R}^+$ with 正定、正齐次/半范数、三角不等式/次可加
-- normierter Vektorraum $(E, \|\cdot\|)$
-- von der Norm induzierte Metrik
-	Es sei $E := (E, \|\cdot\|)$ ein normierter Vektorraum,
-	$d: E \times E \to \mathbb{R}^{+}, \quad (x, y) \mapsto \|x - y\|$
-	- Alle Aussagen die für metrische Räume gemacht wurden, auch für $E$. Insbesondere sind also die Begriffe „Umgebung“, „Häufungspunkt“ und „Konvergenz“ in $E$ wohldefiniert.
-	- Alle Aussagen bei denen *nicht* von der Körperstruktur von $\mathbb{K}$ oder der Ordnungsstruktur von $\mathbb{R}$ Gebrauch gemacht wurde, ohne weiteres auf Folgen in $E$ übertragen werden können.
-- umgekehrte Dreiecksungleichung
-- diskrete Metrik
-	Es auf jedem von 0 verschiedenen Vektorraum $V$ eine Metrik gibt, bezüglich derer $V$ beschränkt ist.
-	Hingegen folgt aus der positive Homogenität, daß es auf $V$ keine Norm geben kann, bezüglich derer $V$ normbeschränkt ist.
-- Betragsnorm $|\cdot|$ auf $\mathbb{K}$
-	$\mathbb{K} := (\mathbb{K}, |\cdot|)$
-- induzierte Norm
-- die Produktnorm auf $E := E_1 \times \dots \times E_m$, $(E_j, \|\cdot\|_j)$
-	$\|x\|_{\infty} := \max\limits_{1 \le j \le m} \|x_j\|_j, \quad  x = (x_1, \dots, x_m) \in E$
-	- Maximumsnorm
-		$|x|_{\infty} := \max\limits_{1 \le j \le m} |x_j|, \quad x = (x_1, \dots, x_m) \in \mathbb{K}^m.$
-[vector spaces - Difference between metric and norm made concrete: The case of Euclid - Mathematics Stack Exchange](https://math.stackexchange.com/questions/38634/difference-between-metric-and-norm-made-concrete-the-case-of-euclid)
-
-[general topology - Metric spaces and normed vector spaces - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1607957/metric-spaces-and-normed-vector-spaces)
-
 #### Topology
 
 - $\mathbb{C} := \mathbb{R} + i\mathbb{R}$ can be identified with the set $\mathbb{R}^2$

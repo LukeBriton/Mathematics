@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e18a5c377ca4dd8b",
+        "id": "3c3b902be1b6b1ad",
         "type": "tabs",
         "children": [
           {
-            "id": "8531475980d97304",
+            "id": "94753b4828ce14a4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,8 +36,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inner product space",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -75,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 280.5040512084961
   },
   "right": {
     "id": "c31667e5590071d6",
@@ -176,13 +176,17 @@
   },
   "active": "9b29e7483ebaf799",
   "lastOpenFiles": [
-    "Topology/Fundamentals.md",
     "Analysis/Convergence.md",
-    "Abstract Algebra/Algebraic Structures.md",
-    "Analysis/Measure Theory.md",
-    "Analysis/Normed Vector Space.md",
-    "Analysis/Analysis.md",
     "Analysis/Metric Space.md",
+    "Linear Algebra/Vector.md",
+    "Linear Algebra/Vector Space.md",
+    "Topology/Fundamentals.md",
+    "Abstract Algebra/Algebraic Structures.md",
+    "Analysis/Normed Vector Space.md",
+    "Abstract Algebra/Group.md",
+    "Analysis/Integral Calculus in One Variable.md",
+    "Analysis/Measure Theory.md",
+    "Analysis/Analysis.md",
     "Combinatorics/Generating Function.md",
     "Sans titre.base",
     "Analysis/Number Systems/Natural Numbers.md",
@@ -193,16 +197,12 @@
     "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analysis/Continuous Functions.md",
     "Analysis/Banach Space.md",
-    "Linear Algebra/Vector Space.md",
     "Combinatorics/Permutations and Combinations.md",
     "Combinatorics/Principe des Tiroirs.md",
     "Combinatorics/Recurrence Relation.md",
-    "Linear Algebra/Vector.md",
     "Analysis/Number Systems/Real Numbers.md",
     "Analysis/Number Systems/Number System.md",
     "Analysis/Number Systems/Complex Numbers.md",
-    "AI/Convolution.md",
-    "AI/Tensor.md",
     "Sans titre.canvas",
     "Sans titre 1.canvas",
     "Mathematics.html",
