@@ -1,4 +1,3 @@
-
 # Vector Space
 
 ## Algebraic View
@@ -264,11 +263,11 @@ metric induced from the norm: $d(x, y)=‖x − y‖$
 
 拓扑空间
 
-![[Normed Vector Space]]
+[[Normed Vector Space]]
 
-![[Hilbert Space]]
+[[Hilbert Space]]
 
-[Inner product space](https://en.wikipedia.org/wiki/Inner_product_space)
+[[Inner product space]]
 
 The article on [Hilbert spaces](https://en.wikipedia.org/wiki/Hilbert_spaces "Hilbert spaces") has several examples of inner product spaces, wherein the metric induced by the inner product yields a [complete metric space](https://en.wikipedia.org/wiki/Complete_metric_space "Complete metric space"). An example of an inner product space which induces an incomplete metric is the space $C([a, b])$, of continuous complex valued functions $f$ and <math>g</math> on the interval $[a, b]$. The inner product is
 $$
@@ -280,6 +279,6 @@ f_k(t) = \begin{cases} 0 & t \in [-1, 0] \\ 1 & t \in \left[\tfrac{1}{k}, 1\righ
 $$
 This sequence is a [Cauchy sequence](https://en.wikipedia.org/wiki/Cauchy_sequence "Cauchy sequence") for the norm induced by the preceding inner product, which does not converge to a _continuous_ function.
 
-![[Banach Space]]
+[[Banach Space]]
 
-![[Metric Space]]
+[[Metric Space]]

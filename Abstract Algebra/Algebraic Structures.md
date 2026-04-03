@@ -91,7 +91,7 @@ $K$-Vector Space $\mathcal{A}$ $\xrightarrow{\text{双线性运算}\mathcal{A}\t
 - Group with operators
 
 - Module
-    - Vector Space
+    - [[Vector Space]]
         - Graded vector spaces
         - Quadratic space
     - Other special types of modules, including [free modules](https://en.wikipedia.org/wiki/Free_module "Free module"), [projective modules](https://en.wikipedia.org/wiki/Projective_module "Projective module"), [injective modules](https://en.wikipedia.org/wiki/Injective_module "Injective module") and [flat modules](https://en.wikipedia.org/wiki/Flat_module "Flat module") are studied in abstract algebra.
@@ -106,7 +106,7 @@ $K$-Vector Space $\mathcal{A}$ $\xrightarrow{\text{双线性运算}\mathcal{A}\t
 - Nonassociative algebra
 	- Lie algebra
 
-- Inner product space
+- [[Inner product space]]
 
 - Hopf Algebra
 
@@ -117,7 +117,7 @@ $K$-Vector Space $\mathcal{A}$ $\xrightarrow{\text{双线性运算}\mathcal{A}\t
 
 - Topological vector space
 
-- Normed vector space
+- [[Normed vector space]]
 	- Banach space
 
 - Hilbert space
