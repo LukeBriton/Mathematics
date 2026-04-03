@@ -86,12 +86,6 @@ $$
 > 	任意 $ε$-开邻域 ，总有尾列。
 	 收敛的条件比聚点更强。
 
-- product metric on $X := X_1 \times \cdots \times X_m$, $(X_j, d_j)$, $1 \le j \le m$
-	$(x_n) = ((x_n^1, \dots, x_n^m))_{n \in \mathbb{N}}$
-	$a := (a^1, \dots, a^m)$
-	$\lim x_n \to a \iff \lim x_n^j \to a^j$.
-	- a sequence of vectors is convergent iff the sequences of its components are convergent (? by equivalence of metrics)
-
 - 收敛$\implies$有界
 - 收敛$\implies$有唯一聚点/极限
 	有唯一聚点$\cancel{ \implies }$收敛
@@ -115,13 +109,26 @@ $$
 	$$
 	- aus $x_n < y_n$ folgt nicht $\lim x_n < \lim y_n$.
 - 夹逼定理
-	Es seien $(x_n)$, $(y_n)$ und $(z_n)$ reelle Zahlenfolgen mit $x_n \le y_n \le z_n$ für fast alle $n \in \mathbb{N}$, und es gelte $\lim x_n = \lim z_n =: a$. Dann konvergiert auch $(y_n)$ gegen $a$.
+	Es seien $(x_n)$, $(y_n)$ und $(z_n)$ reelle Zahlenfolgen mit $x_n \le y_n \le z_n$ für fast alle $n \in \mathbb{N}$, und es gelte
+	$$\lim x_n = \lim z_n =: a.$$
+	Dann konvergiert auch $(y_n)$ gegen $a$.
 - 收敛 $\Longleftrightarrow$ 绝对值收敛
 - 收敛 $\Longleftrightarrow$ 各分量收敛 （little to be gained）
 	- 复数列收敛 $\Longleftrightarrow$ 实部、虚部收敛
 
-- Bolzano-Weierstrass
-	有界 $\implies$ 有收敛子列&聚点
+- product metric on $X := X_1 \times \cdots \times X_m$, $(X_j, d_j)$, $1 \le j \le m$
+	$(x_n) = ((x_n^1, \dots, x_n^m))_{n \in \mathbb{N}}$
+	$a := (a^1, \dots, a^m)$
+	$\lim x_n \to a \iff \lim x_n^j \to a^j$.
+	- a sequence of vectors is convergent iff the sequences of its components are convergent (? by equivalence of metrics)
+- Es seien $m \in \mathbb{N}^\times$ und $x_n = (x_n^1, \dots, x_n^m) \in \mathbb{K}^m$ für $n \in \mathbb{N}$. Dann sind äquivalent:
+	- (i) Die Folge $(x_n)_{n \in \mathbb{N}}$ konvergiert in $\mathbb{K}^m$ gegen $x = (x^1, \dots, x^m)$.
+	- (ii) Für jedes $k \in \{1, \dots, m\}$ konvergiert die Folge $(x_n^k)_{n \in \mathbb{N}}$ in $\mathbb{K}$ gegen $x^k$. (komponentenweise Konvergenz)
+	Eine Folge in $\mathbb{K}^m$ konvergiert genau dann, wenn sie komponentenweise konvergiert.
+
+
+- Bolzano-Weierstraß
+	$\mathbb{K}^m$ 上有界 $\implies$ 有收敛子列&聚点
 
 - 收敛 $\implies$ Cauchy列
 	完备：Cauchy列 $\implies$ 收敛 
@@ -146,53 +153,60 @@ bounded/beschränkt
 有界数列向量空间 
 	$\ell_{\infty} := \ell_{\infty}(\mathbb{K}) := B(\mathbb{N}, \mathbb{K})$
 	$\|(x_n)\|_{\infty} = \sup_{n \in \mathbb{N}} |x_n|, \quad (x_n) \in \ell_{\infty}$
+	- $c_0$ und $c$ sind normierte Vektorräume bezüglich der Supremumsnorm, und $c_0 \subseteq c \subseteq \ell_\infty$ als Vektorräume.
+	- $c_0$ ist ein abgeschlossener Untervektorraum von $\ell_\infty$.
 
 有界函数向量空间
 	$B(X,E):=(B(X, E), ‖·‖_{∞}):=\{ u ∈ E^X ; u\text{ ist beschränkt} \}$ ist ein Untervektorraum von $E^X$
 	- $(E, ‖·‖)$ Banach $\implies$ $B(X,E)$ Banach
 	- $B(E, F ) ∩ \text{Hom}(E, F ) = {0}.$
 
-#### Topology
-
-- $\mathbb{C} := \mathbb{R} + i\mathbb{R}$ can be identified with the set $\mathbb{R}^2$
-	So is $\mathbb{C}^m \longleftrightarrow$ $\mathbb{R}^{2m}$ 典范恒等
-	Thus for topological questions, that is, statements about neighborhoods of points, the sets $\mathbb{C}^m$ and $\mathbb{R}^{2m}$ can be identified.
-- The notions ‘cluster point’ and ‘convergence’ are topological concepts, that is, they are defined in terms of neighborhoods. Thus they are invariant under changes to equivalent norms.
-
 #### Monotone Sequences
 
 - 单调有界，收敛于确界
-
+	Jede wachsende (bzw. fallende) beschränkte Folge $(x_n)$ in $\mathbb{R}$ konvergiert, und es gilt
+	$$
+	x_n \uparrow \sup\{x_n; n \in \mathbb{N}\} \quad (\text{bzw. } x_n \downarrow \inf\{x_n; n \in \mathbb{N}\})
+	$$
 - 一些个重要极限（我好嫌计算。。）
 
 #### Infinite Limits
 
-- $\bar{\mathbb{R}}$ 上无合适度量，以ad hoc定义扩展集合。。
-	$\bar{\mathbb{R}}$ 上“收敛”包括趋于无穷（converge improperly）。
-	$\bar{\mathbb{R}}$ 上单调集合“收敛”
+- $\bar{\mathbb{R}}$ 上无合适度量，以ad hoc定义扩展 $\mathbb{R}$。
+	- $\bar{\mathbb{R}}$ 上“收敛”包括趋于无穷（converge improperly）。
+	- $\mathbb{R}$ 中单调数列在 $\bar{\mathbb{R}}$ 上“收敛”。
 
 - $\bar{\mathbb{R}}$ 中的上下极限（**任意**数列均有）
-	$\limsup:=\overline{\lim\limits_{ n \to \infty }}$ 最大聚点
-	$\liminf:=\underline{\lim}\limits_{ n \to \infty }$ 最小聚点
-
-- $\bar{\mathbb{R}}$ 上收敛 $\Longleftrightarrow$ $\limsup\le\liminf$
+	- Limes superior (der kleinste Häufungspunkt)
+		$$
+		\limsup := \overline{\lim}\limits_{n \to \infty} x_n := \lim_{n \to \infty} \left( \sup_{k \ge n} x_k \right) = \inf_{n \in \mathbb{N}} \left( \sup_{k \ge n} x_k \right)
+		$$
+	- Limes inferior (der größte Häufungspunkt)
+		$$
+		\liminf := \underline{\lim}\limits_{n \to \infty} x_n := \lim_{n \to \infty} \left( \inf_{k \ge n} x_k \right) = \sup_{n \in \mathbb{N}} \left( \inf_{k \ge n} x_k \right)
+		$$
+	- $\bar{\mathbb{R}}$ 上收敛 $\Longleftrightarrow$ $\overline{\lim} x_n \le \underline{\lim} x_n$
 
 #### Completeness
 
+Cauchyfolgen
 - 任意 $\varepsilon$，总有尾列，任两项距离小于 $\varepsilon$。
-
-Cauchy列 平移不变 不能用邻域定义
-
-[Translation invariant metrics and topological groups - Mathematics Stack Exchange](https://math.stackexchange.com/questions/976933/translation-invariant-metrics-and-topological-groups)
-
+- translationsinvariant
+	Sind $(x_n)$ eine Cauchyfolge und $a$ ein beliebiger Vektor in $E$, so ist auch die „um $a$ verschobene“ Folge $(x_n + a)$ eine Cauchyfolge.
+	- Dies zeigt insbesondere, daß Cauchyfolgen *nicht* mit Umgebungen beschrieben werden können.
+	- [Translation invariant metrics and topological groups - Mathematics Stack Exchange](https://math.stackexchange.com/questions/976933/translation-invariant-metrics-and-topological-groups)
 - 收敛 $\implies$ Cauchy列
+	Cauchy列$\cancel{\implies}$收敛
 - Cauchy列 $\implies$ 有界
 - Cauchy列有收敛子列 $\implies$ 收敛
-- 完备：Cauchy列 $\implies$ （有界 $\implies$ 有收敛子列 $\implies$）收敛 
 
-- The completeness of a normed vector space E is invariant under changes to equivalent norm
-
-- $\mathbb{K}^m$ Banach
+completeness/complétude/Vollständigkeit
+complete/complet/vollständig
+- Cauchy列 $\implies$ （有界 $\implies$ 有收敛子列 $\implies$）收敛 
+- Die Vollständigkeit eines normierten Vektorraumes $E$ ist invariant unter Übergang zu äquivalenten Normen
+- $\mathbb{K}^m$ ist ein Banachraum.
+- Es seien $X$ eine nichtleere Menge und $E = (E, \|\cdot\|)$ ein Banachraum.
+	Dann ist auch $B(X, E)$ ein Banachraum.
 
 - $\mathbb{Q}^\mathbb{N}$ 有幺交换环
 	- $\bar{a}=(a,a,\dots,a)$，则 $\bar{1}$ 为其幺元

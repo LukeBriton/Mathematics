@@ -1,4 +1,4 @@
-#### Openness
+#### Preliminaries
 
 der offene/abgeschlossene Ball
 - In $\mathbb{K}=\mathbb{R}$ oder $\mathbb{C}$
@@ -13,9 +13,24 @@ der offene/abgeschlossene Ball
 	$\mathbb{B}(a, r)$, $\bar{\mathbb{B}}(a, r)$
 	Einheitsball $\mathbb{B} := \mathbb{B}(0,1)$, $\bar{\mathbb{B}} := \bar{\mathbb{B}}(0,1)$
 	$r\mathbb{B} = \mathbb{B}(0,r)$, $r\bar{\mathbb{B}} = \bar{\mathbb{B}}(0,r)$, $a + r\mathbb{B} = \mathbb{B}(a,r)$, $a + r\bar{\mathbb{B}} = \bar{\mathbb{B}}(a,r)$.
+- Es bezeichne $\mathbb{B}^m$ den reellen offenen euklidischen Einheitsball, d.h. $\mathbb{B}^m := \mathbb{B}_{\mathbb{R}^m},$
+	$\mathbb{B}_{\infty}^{m} = \underbrace{\mathbb{B}_{\infty}^{1} \times \cdots \times \mathbb{B}_{\infty}^{1}}_{m} = (-1, 1)^{m}$
+	Für $\mathbb{B}^m$ oder $\mathbb{B}_1^m$ gibt es keine analoge Darstellung.
+- Umgebungsbegriff
+	Es seien $E = (E, \|\cdot\|)$ ein normierter Vektorraum und $\|\cdot\|_1$ eine zu $\|\cdot\|$ äquivalente Norm auf $E$. Setzen wir $E_1 := (E, \|\cdot\|_1)$, so gilt
+	$$
+	\mathcal{U}_E(a) = \mathcal{U}_{E_1}(a) , \quad a \in E
+	$$
+	d.h., der Umgebungsbegriff hängt nur von der Äquivalenzklasse der Norm ab; äquivalente Normen liefern dieselben Umgebungen.
+- $\mathbb{C} := \mathbb{R} + i\mathbb{R}$
+	$\mathbb{C} \ni z = x + iy \leftrightarrow (x, y) \in \mathbb{R}^2$
+	$\mathbb{C}^m \ni (z_1, \dots, z_m) = (x_1 + iy_1, \dots, x_m + iy_m) \leftrightarrow (x_1, y_1, \dots, x_m, y_m) \in \mathbb{R}^{2m}$
+	- Bezüglich dieser kanonischen Identifikation gilt
+		$\mathbb{B}_{\mathbb{C}^m} = \mathbb{B}^{2m} = \mathbb{B}_{\mathbb{R}^{2m}}$ und folglich $\mathcal{U}_{\mathbb{C}^m} = \mathcal{U}_{\mathbb{R}^{2m}}$
+	Somit können bei **topologischen Fragen**, d.h. bei Untersuchungen, in welchen Aussagen über Umgebungen von Punkten gemacht werden, die Mengen $\mathbb{C}^m$ und $\mathbb{R}^{2m}$ miteinander identifiziert werden.
+- Die Begriffe „Häufungspunkt“ und „Konvergenz“ sind **topologische Konzeptionen**, d.h., sie verwenden nur den Umgebungsbegriff und sind somit invariant unter Übergang zu äquivalenten Normen.
 
-
-
+#### Openness
 
 $X:=(X,d)$ 度量空间，$a\in A \subseteq X$
 - $a$ 是 $A$ 的**内点**：有邻域包含之
@@ -41,6 +56,9 @@ $X:=(X,d)$ 度量空间，$a\in A \subseteq X$
 		- $(M, \mathcal{T})$: 拓扑空间
 
 #### Closedness
+
+Es sei $X$ ein metrischer Raum.
+Eine Teilmenge $Y$ von $X$ heißt **abgeschlossen**, wenn für jede Folge $(y_n)$ in $Y$, die in $X$ konvergiert, gilt: $\lim y_n \in Y$.
 
  $A \subseteq X$
  - A 闭，若其补集开

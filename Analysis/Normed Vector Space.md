@@ -19,7 +19,32 @@
 	$\|x\|_{\infty} := \max\limits_{1 \le j \le m} \|x_j\|_j, \quad  x = (x_1, \dots, x_m) \in E$
 	- Maximumsnorm
 		$|x|_{\infty} := \max\limits_{1 \le j \le m} |x_j|, \quad x = (x_1, \dots, x_m) \in \mathbb{K}^m.$
-
+- der euklidischen Norm
+	$|x| := \sqrt{(x|x)} = \sqrt{\sum_{j=1}^{m} |x_j|^2}, \quad x = (x_1, \dots, x_m) \in \mathbb{K}^m$
+- die Summennorm
+	$|x|_1 := \sum_{j=1}^{m} |x_j|, \quad x = (x_1, \dots, x_m) \in \mathbb{K}^m$
+- Äquivalente Normen
+	Es sei $E$ ein Vektorraum. Wir nennen zwei Normen $\|\cdot\|_1$ und $\|\cdot\|_2$ auf $E$ äquivalent, falls es ein $K \ge 1$ gibt mit
+	$$
+	\frac{1}{K} \|x\|_1 \le \|x\|_2 \le K \|x\|_1, \quad x \in E.
+	$$
+	In diesem Fall schreiben wir $\|\cdot\|_1 \sim \|\cdot\|_2$.
+	- $|\cdot|_1 \sim |\cdot| \sim |\cdot|_\infty \quad \text{auf } \mathbb{K}^m$
+		$\mathbb{B}^m \subset \mathbb{B}_\infty^m \subset \sqrt{m}\mathbb{B}^m, \quad \mathbb{B}_1^m \subset \mathbb{B}^m \subset \sqrt{m}\mathbb{B}_1^m.$
+	Auf $\mathbb{K}^m$ sind alle Normen äquivalent
+- Matrix norm
+	Für $m, n \in \mathbb{N}^\times$ bezeichnet $\mathbb{K}^{m \times n}$ die Menge aller $(m \times n)$-Matrizen mit Einträgen aus $\mathbb{K}$. Wir können $\mathbb{K}^{m \times n}$ als die Menge aller Abbildungen von $\{1, \dots, m\} \times \{1, \dots, n\}$ in $\mathbb{K}$ auffassen.
+	- Dann ist $\mathbb{K}^{m \times n}$ mit den punktweisen Verknüpfungen ein Vektorraum.
+		Hierbei sind $\alpha A$ und $A + B$ für $\alpha \in \mathbb{K}$ und $A, B \in \mathbb{K}^{m \times n}$ die aus der Linearen Algebra bekannten Operationen der Multiplikation einer Matrix mit einem Skalar und der Addition zweier Matrizen.
+		- (a) Durch
+			$|A| := \left( \sum_{j=1}^{m} \sum_{k=1}^{n} |a_{jk}|^2 \right)^{1/2}, \quad A = [a_{jk}] \in \mathbb{K}^{m \times n}$
+			wird auf $\mathbb{K}^{m \times n}$ eine Norm definiert. (Frobenius norm)
+		- (b) Die folgenden Abbildungen definieren äquivalente Normen:
+			(1) $[a_{jk}] \mapsto \sum_{j=1}^{m} \sum_{k=1}^{n} |a_{jk}|$ ($1$-norm)
+			(2) $[a_{jk}] \mapsto \max_{1 \le j \le m} \sum_{k=1}^{n} |a_{jk}|$ ($\infty$-norm)
+			(3) $[a_{jk}] \mapsto \max_{1 \le k \le n} \sum_{j=1}^{m} |a_{jk}|$
+			(4) $[a_{jk}] \mapsto \max_{\substack{1 \le j \le m \\ 1 \le k \le n}} |a_{jk}|$ (max norm)
+ 
 [vector spaces - Difference between metric and norm made concrete: The case of Euclid - Mathematics Stack Exchange](https://math.stackexchange.com/questions/38634/difference-between-metric-and-norm-made-concrete-the-case-of-euclid)
 
 [general topology - Metric spaces and normed vector spaces - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1607957/metric-spaces-and-normed-vector-spaces)
