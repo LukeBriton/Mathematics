@@ -40,7 +40,7 @@
 	\left|\sum_{j=1}^{m} \xi_j \overline{\eta_j}\right|^2 \le \left(\sum_{j=1}^{m} |\xi_j|^2\right) \left(\sum_{j=1}^{m} |\eta_j|^2\right)
 	$$
 - Hilbertnorm/die vom Skalarprodukt $(\cdot|\cdot)$ induzierte Norm
-	$\|x\| := \sqrt{(x|x)} , \quad x \in E$
+	$\|x\| := \sqrt{(x|x)} , \quad x \in E$
 - Parallelogramm-identität
 	$2(\|x\|^2 + \|y\|^2) = \|x + y\|^2 + \|x - y\|^2, \quad x, y \in E$
 - orthogonal
