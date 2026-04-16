@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bb377c665aa019b6",
+        "id": "9a758e2576754b75",
         "type": "tabs",
         "children": [
           {
-            "id": "9f9f81926d627e64",
+            "id": "e6bebea34be127d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Analysis/Series.md",
+                "bFile": "Analysis/Series.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Series"
             }
           }
         ]
@@ -75,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5040512084961
+    "width": 280.5040512084961,
+    "collapsed": true
   },
   "right": {
     "id": "c31667e5590071d6",
@@ -147,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Analysis/Series.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan"
+              "title": "Plan de Series"
             }
           }
         ]
@@ -174,34 +180,34 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "9f9f81926d627e64",
+  "active": "e6bebea34be127d6",
   "lastOpenFiles": [
+    "Analysis/Convergence.md",
+    "Analysis/Normed Vector Space.md",
+    "Linear Algebra/Inner Product Space.md",
+    "AI/Convolution.md",
+    "Analysis/Series.md",
+    "Analysis/Banach Space.md",
+    "Linear Algebra/Vector Space.md",
+    "Linear Algebra/Vector.md",
     "Abstract Algebra/Algebraic Structures.md",
     "Abstract Algebra/Algebra over a field.md",
     "Abstract Algebra/Field.md",
     "AI/Tensor.md",
-    "AI/Convolution.md",
     "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
     "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
     "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
     "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
     "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
-    "Analysis/Normed Vector Space.md",
-    "Analysis/Series.md",
     "Analysis/Multivariable Differential Calculus.md",
     "Analysis/Metric Space.md",
     "Analysis/Measure Theory.md",
     "Analysis/Integral Calculus in One Variable.md",
-    "Analysis/Convergence.md",
     "Functional Analysis/Hilbert Space.md",
     "Topology/Fundamentals.md",
-    "Linear Algebra/Vector Space.md",
-    "Linear Algebra/Vector.md",
     "Linear Algebra/Transformations.md",
     "Linear Algebra/Bilinear Form.md",
-    "Linear Algebra/Inner Product Space.md",
-    "Linear Algebra/Space.md",
     "Sans titre.base",
     "Sans titre.canvas",
     "Sans titre 1.canvas",

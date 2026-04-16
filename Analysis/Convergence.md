@@ -50,7 +50,7 @@ $$
 \lim:c\to \mathbb{K}, (x_{n})\mapsto \lim{x_{n}}
 $$
 	is linear.
-	
+	- Die Linearität der Abbildung $\lim$ überträgt sich auch auf Reihen.
 - Null Sequence: $\text{ker}(\lim)=c_{0}=c_{0}(\mathbb{K}):=\{ (x_{n}) ∈ s ; (x_{n})\text{ converges with}\lim x_{n}=0\}$
 - 零列$\times$有界、收敛列$\times$收敛列
 	$c$ is a subalgebra of $s$ and the function $\lim:c\to \mathbb{K}$ is an algebra homomorphism
@@ -224,24 +224,20 @@ complete/complet/vollständig
 
 #### Convergence of Series
 
-级数收敛：部分和序列收敛
+- 级数收敛:=部分和序列收敛
 
 - $\sum x_{k}$ 收敛 $\implies$ $(x_{k})$ 零列
 
 - 调和级数发散（非柯西列）
-
 - 几何级数 $|a|?1$
 
-- the linearity of the limit function holds for series
-	部分和同样可以视作数列。。
-
-- Cauchy 审敛准则
-	部分和序列是Cauchy列
-
-- 非负级数：$∑ x_k < ∞ \Longleftrightarrow ∑ x_k \text{ converges}$
-
-- 交错级数 $± ∑(−1)^kx_{k}$ with $x_{k}\ge{0}$
-	- Leibniz 审敛准则
+- Cauchy-Kriterium
+	部分和序列是 Cauchy 列
+- 非负级数 $∑x_{k} \text{ mit } x_k \ge 0$
+	$∑ x_k < ∞ \Longleftrightarrow ∑ x_k \text{ konvergiert}$
+- Alternierende Reihen 交错级数
+  $± ∑(−1)^kx_{k} \text{ mit } x_{k}\ge{0}$
+	- Leibnizsches-Kriterium
 		$(x_{k})$ 非负单减零列 $\implies$ $∑(−1)^kx_{k}$ 收敛
 	- 交错调和级数
 
@@ -271,21 +267,122 @@ complete/complet/vollständig
 
 #### Absolute Convergence
 
+absolut/bedingt konvergent
 - 绝对收敛 $\implies$ 收敛
 - 条件收敛
 
-- 强级数（majorant）审敛准则
-	Banach Space 级数有强级数 $\implies$ 绝对收敛
-
-- 根值审敛法
+- Majorantenkriterium 强级数（majorant）审敛准则
+	- $\sum x_k$ in $E$ und $\sum a_k$ in $\mathbb{R}^+$.
+		  Dann heißt die Reihe $\sum a_k$ **Majorante** (bzw. **Minorante**) für $\sum x_k$:
+		  falls es ein $K \in \mathbb{N}$ gibt mit $|x_k| \le a_k$ für alle $k \ge K$ (bzw. $a_k \le |x_k|$). 
+	- (in einem Banachraum) 有强级数 $\implies$ 绝对收敛
+- Wurzelkriterium 根值审敛法
 	$α:=\overline{\lim}\sqrt[k]{|x_{k}|}$
-	$α<1$, $α>1$
-	$α=1$ both
-- 比值审敛法
-	$\frac{|x_{k+1}|}{|x_{k}|}$
+	$α<1$: konvergiert absolut
+	$α>1$: divergiert
+	$α=1$: oder
+- Quotientenkriterium 比值审敛法
+	$K_0 \text{ mit } x_{k} \neq 0 \text{ für } k\geq K_{0}$
+	$\exists K \geq K_{0}$
+	- $\exists q\in(0,1), \frac{|x_{k+1}|}{|x_{k}|}\le q, k\geq K$: konvergiert absolut
+	- $\frac{|x_{k+1}|}{|x_{k}|}\ge 1, k\geq K$: divergiert
 
-- 指数函数：$\text{exp}:\mathbb{C}\to \mathbb{C}, z\mapsto \sum\limits_{k=0}^\infty \frac{z^k}{k!}$
-- 重排
-	a convergent series cannot be arbitrarily rearranged without changing its value
-	- 重排定理
+- die Exponentialfunktion 指数函数
+	$\text{exp}:\mathbb{C}\to \mathbb{C}, z\mapsto \sum\limits_{k=0}^\infty \frac{z^k}{k!}$
+	- Exponentialreihe: $\sum z^k/k!$
+	- die Funktionalgleichung der Exponentialfunktion
+	  $\exp(x) \cdot \exp(y) = \exp(x + y), \quad x, y \in \mathbb{C}$
+	- $\exp(r) = e^r, \quad r \in \mathbb{Q},$
+
+- rearrangement/réarrangement/Umordnung/重排
+	- Ist $\sigma$ eine Permutation von $\mathbb{N}$ mit $\sigma(k) = k$ für fast alle $k \in \mathbb{N}$, so haben $\sum x_k$ und $\sum_k x_{\sigma(k)}$ das gleiche Konvergenzverhalten, und ihre Werte stimmen überein, falls die Reihen konvergieren.
+	- Das Kommutativgesetz der Addition für „unendlich viele Summanden“ im allgemeinen nicht gilt, d.h., eine konvergente Reihe kann nicht beliebig umgeordnet werden, ohne ihren Wert zu verändern.
+	- Umordnungssatz 重排定理
 		绝对收敛 $\implies$ 重排绝对收敛&值相同
+- double series/séries double/Doppelreihen/
+	$x_{jk}:=x(j, k)=x: \mathbb{N} \times \mathbb{N} \to E$
+	Die Abbildung $x$ kann im doppelt-unendlichen Schema
+	$$
+	\begin{array}{ccccc}
+x_{00} & x_{01} & x_{02} & x_{03} & \dots \\
+x_{10} & x_{11} & x_{12} & x_{13} & \dots \\
+x_{20} & x_{21} & x_{22} & x_{23} & \dots \\
+x_{30} & x_{31} & x_{32} & x_{33} & \dots \\
+\vdots & \vdots & \vdots & \vdots & \ddots
+\end{array}
+	$$
+	dargestellt werden.
+	- Die Menge $\mathbb{N} \times \mathbb{N}$ ist abzählbar, d.h., es gibt eine Bijektion $\alpha: \mathbb{N} \to \mathbb{N} \times \mathbb{N}$, eine **Abzählung** von $\mathbb{N} \times \mathbb{N}$. Ist $\alpha$ eine solche Abzählung, so nennen wir die Reihe $\sum_n x_{\alpha(n)}$ **Anordnung** der Doppelreihe $\sum x_{jk}$.
+	- Fixieren wir $j \in \mathbb{N}$ bzw. $k \in \mathbb{N}$, so heißen die Reihen $\sum_k x_{jk}$ bzw. $\sum_j x_{jk}$ $j$-te **Zeilenreihe** bzw. $k$-te **Spaltenreihe** von $\sum x_{jk}$.
+	Konvergiert jede Zeilen- bzw. jede Spaltenreihe, so können wir die **Reihe der Zeilensummen** $\sum_j (\sum_{k=0}^{\infty} x_{jk})$ bzw. die **Reihe der Spaltensummen**$^5$ $\sum_k (\sum_{j=0}^{\infty} x_{jk})$ betrachten.
+	- Wir nennen die Doppelreihe $\sum x_{jk}$ **summierbar**, wenn
+		$$
+		\sup_{n \in \mathbb{N}} \sum_{j,k=0}^{n} |x_{jk}| < \infty
+$$
+		gilt.
+- Doppelreihensatz
+	Es sei $\sum x_{jk}$ eine summierbare Doppelreihe. Dann gelten folgende Aussagen:
+	- (i) Jede Anordnung $\sum_n x_{\alpha(n)}$ von $\sum x_{jk}$ konvergiert absolut gegen einen von der Abzählung $\alpha$ unabhängigen Wert $s \in E$.
+	- (ii) Die Reihe der Zeilensummen $\sum_j (\sum_{k=0}^{\infty} x_{jk})$ und die Reihe der Spaltensummen $\sum_k (\sum_{j=0}^{\infty} x_{jk})$ konvergieren absolut, und es gilt
+		$$
+		\sum_{j=0}^{\infty} \left( \sum_{k=0}^{\infty} x_{jk} \right) = \sum_{k=0}^{\infty} \left( \sum_{j=0}^{\infty} x_{jk} \right) = s .
+		$$
+
+- Cauchyprodukte/Faltungsprodukt
+	$$
+	\sum_j x_{\delta(j)} = \sum_n z_n = \sum_n \left( \sum_{k=0}^{n} x_k y_{n-k} \right) .
+	$$
+	- Cauchyprodukte von Reihen
+	  Die Reihen $\sum x_j$ und $\sum y_k$ seien absolut konvergent in $\mathbb{K}$. Dann konvergiert das Cauchyprodukt $\sum_n \sum_{k=0}^n x_k y_{n-k}$ von $\sum x_j$ und $\sum y_k$ absolut, und es gilt
+	  $$
+	  \left(\sum_{j=0}^{\infty} x_j\right) \left(\sum_{k=0}^{\infty} y_k\right) = \sum_{n=0}^{\infty} \sum_{k=0}^{n} x_k y_{n-k} .
+	  $$
+		- Es ist für bedingt konvergente Reihen i. allg. falsch.
+
+- Es sei $\sum x_k$ eine bedingt konvergente Reihe in $\mathbb{R}$.
+  Wir setzen $x^+ := \max\{x, 0\}$ und $x^- := \max\{-x, 0\}$ für $x \in \mathbb{R}$.
+	- Die Reihen $\sum x_k^+$ und $\sum x_k^-$ divergieren.
+	Beweis:
+	- $\sum x_k^+ - \sum x_k^- =\sum x_k<\infty$
+	- $\sum x_k^+ + \sum x_k^- = \sum |x_k|=\infty$
+	$\implies \sum x_k^+ =\infty, \sum x_k^- =\infty$
+
+> Since $x_k=x_k^+-x_k^-$ and $|x_k|=x_k^++x_k^-$, for the partial sums
+> $$
+P_n=\sum_{k=1}^n x_k^+,\quad N_n=\sum_{k=1}^n x_k^-,\quad S_n=\sum_{k=1}^n x_k
+$$
+> we have
+> $$
+S_n=P_n-N_n,\qquad \sum_{k=1}^n|x_k|=P_n+N_n.
+$$
+> If $P_n$ were bounded, then as an increasing sequence it would converge; since $S_n\to s$, also $N_n=P_n-S_n$ would converge. Hence $P_n+N_n$ would converge, contradicting $\sum|x_k|=\infty$. Therefore $P_n\to+\infty$. Similarly $N_n\to+\infty$.
+
+- der **Umordnungssatz von Riemann**
+  Ist $\sum x_k$ eine bedingt konvergente Reihe in $\mathbb{R}$,
+	- so gibt es zu jeder Zahl $s \in \mathbb{R}$ eine Permutation $\sigma$ von $\mathbb{N}$ mit $\sum_k x_{\sigma(k)} = s$.
+	- Ferner gibt es eine Permutation $\tau$ von $\mathbb{N}$, so daß $\sum_k x_{\tau(k)}$ divergiert.
+  (Hinweis: Man verwende Aufgabe 3 und approximiere $s \in \mathbb{R}$ von oben und von unten durch geeignete Kombinationen von Partialsummen der Reihen $\sum x_k^+$ und $-\sum x_k^-$.)
+	- Konstruktion einer Umordnung mit Summe $s$:
+		Deshalb kann man durch positives Aufaddieren die Zielzahl $s$ von unten überschreiten und durch negative Glieder wieder von oben unterschreiten. Da die letzten „Überschreitungs-“ bzw. „Unterschreitungs-“Schritte immer kleiner werden, nähern sich die Partialsummen $s$ an.
+	- Konstruktion einer divergenten Umordnung
+		Wir machen fast dasselbe, nur mit wechselnden Schranken:
+		- Nimm positive Glieder, bis die Summe (>1) ist.
+		- Dann negative Glieder, bis die Summe (<0) ist.
+		- Dann wieder positive Glieder, bis die Summe (>2) ist.
+		- Dann negative Glieder, bis die Summe (<0) ist.
+		- Dann positive Glieder, bis die Summe (>3) ist.
+		- usw.
+
+
+- $ℓ_1$ space
+	Es sei 
+	$$
+	ℓ_1 := ℓ_1(\mathbb{K}) := \left( \{ (x_k) \in \mathbb{R} ; \sum x_k \text{ ist absolut konvergent} \}, \|\cdot\|_1 \right)
+	$$
+	mit
+	$$
+	\|(x_k)\|_1 := \sum_{k=0}^{\infty} |x_k| .
+	$$
+	- (a) $ℓ_1$ ist ein Banachraum.
+	- (b) $ℓ_1$ ist ein echter Untervektorraum von $ℓ_\infty$ mit $\|\cdot\|_\infty \le \|\cdot\|_1$.
+	- (c) Die von $ℓ_\infty$ auf $ℓ_1$ induzierte Norm ist zu der $ℓ_1$-Norm nicht äquivalent. (Hinweis: Man betrachte die Folge $(\xi_j)$ mit $\xi_j := (x_{j,k})_{k \in \mathbb{N}}$, wobei $x_{j,k} = 1$ für $k \le j$, und $x_{j,k} = 0$ für $k > j$ gilt.)
