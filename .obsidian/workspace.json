@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9a758e2576754b75",
+        "id": "cec68444e36c81aa",
         "type": "tabs",
         "children": [
           {
-            "id": "e6bebea34be127d6",
+            "id": "75b5f728ad78f500",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Analysis/Series.md",
-                "bFile": "Analysis/Series.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Series"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -79,8 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5040512084961,
-    "collapsed": true
+    "width": 400.5040512084961
   },
   "right": {
     "id": "c31667e5590071d6",
@@ -180,34 +175,34 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "e6bebea34be127d6",
+  "active": "75b5f728ad78f500",
   "lastOpenFiles": [
     "Analysis/Convergence.md",
+    "Analysis/Sequence.md",
+    "Analysis/Series.md",
+    "Abstract Algebra/Algebra over a field.md",
+    "Abstract Algebra/Algebraic Structures.md",
+    "Analysis/Metric Space.md",
+    "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
+    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
+    "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
+    "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
+    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
+    "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
+    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
+    "Analysis/Continuous Functions.md",
     "Analysis/Normed Vector Space.md",
     "Linear Algebra/Inner Product Space.md",
     "AI/Convolution.md",
-    "Analysis/Series.md",
     "Analysis/Banach Space.md",
     "Linear Algebra/Vector Space.md",
     "Linear Algebra/Vector.md",
-    "Abstract Algebra/Algebraic Structures.md",
-    "Abstract Algebra/Algebra over a field.md",
     "Abstract Algebra/Field.md",
     "AI/Tensor.md",
-    "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
-    "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
-    "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
-    "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
-    "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
-    "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
     "Analysis/Multivariable Differential Calculus.md",
-    "Analysis/Metric Space.md",
     "Analysis/Measure Theory.md",
     "Analysis/Integral Calculus in One Variable.md",
     "Functional Analysis/Hilbert Space.md",
-    "Topology/Fundamentals.md",
-    "Linear Algebra/Transformations.md",
-    "Linear Algebra/Bilinear Form.md",
     "Sans titre.base",
     "Sans titre.canvas",
     "Sans titre 1.canvas",

@@ -3,68 +3,6 @@
 > - unendlich viele (Rechen-)Operationen durchzuführen
 > was die Analysis von der Algebra unterscheidet.
 
-#### Sequences
-
-- sequence/suite/Folge
-	$(x_{n}):=\varphi: \mathbb{N} \to X$
-	$(x_j)_{j \ge m}:=\psi: m + \mathbb{N} \to X$
-
-```tikz
-\usepackage{tikz-cd}
-\usepackage{amssymb}
-\begin{document}
-\begin{tikzcd}
-\mathbb N \arrow[rr, "\varphi"'] \arrow[dr, "s_m(n)=m+n"'] & & X \\  
-& m+\mathbb N \arrow[ur, "\psi"'] &
-\end{tikzcd}
-
-\begin{tikzcd}
-\mathbb N \arrow[rr, "n\mapsto x_{m+n}"'] \arrow[dr, "n\mapsto m+n"'] & & X \\  
-& \{m,m+1,m+2,\dots\} \arrow[ur, "j\mapsto x_j"'] &
-\end{tikzcd}
-\end{document}
-```
-```tikz
-\usepackage{tikz-cd}
-\usepackage{amssymb}
-\begin{document}
-\begin{tikzcd} \mathbb N \arrow[r, "s_m", "\sim"'] & m+\mathbb N \arrow[r, "\psi"] & X \end{tikzcd}
-\end{document}
-```
-- vector space of all number sequences
-	$s=s(\mathbb{K})=\mathbb{K}^\mathbb{N}$
-- Eigenschaft
-	- fast alle: $\exists m\in \mathbb{N}, \forall n \ge m$, $E(x_n)$ wahr ist.
-	- unendlich viele: $\exists N\in \mathbb{N}, \text{Anz}(N) = \infty$ und gilt $E(x_n), n\in N$
-		- Anzahl
-- subsequence/sous-suite/Teilfolge
-	Es sei $\varphi = (x_n)\in X^\mathbb{N}$, und $\psi:\mathbb{N}\to \mathbb{N}$ sei strikt wachsend. Dann heißt $\varphi \circ \psi :=(x_{n_k})_{k \in \mathbb{N}} ∈ X^\mathbb{N}$ Teilfolge von $\varphi$, wobei wir $n_k := ψ(k)$ gesetzt haben.
-
-- 收敛列加法、数乘 
-	the convergent sequences form a subspace of $s$.
-$$
-c=c(\mathbb{K}):=\{ (x_{n}) ∈ s ; (x_{n})\text{ converges}\}
-$$
-	$c$ is a subspace of $s$, and
-$$
-\lim:c\to \mathbb{K}, (x_{n})\mapsto \lim{x_{n}}
-$$
-	is linear.
-	- Die Linearität der Abbildung $\lim$ überträgt sich auch auf Reihen.
-- Null Sequence: $\text{ker}(\lim)=c_{0}=c_{0}(\mathbb{K}):=\{ (x_{n}) ∈ s ; (x_{n})\text{ converges with}\lim x_{n}=0\}$
-- 零列$\times$有界、收敛列$\times$收敛列
-	$c$ is a subalgebra of $s$ and the function $\lim:c\to \mathbb{K}$ is an algebra homomorphism
-
-https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-42/issue-1/Topologies-on-sequences-spaces/pjm/1102968025.pdf
-
-- 非零收敛列倒数
-- Für $m \in \mathbb{N}^\times$ seien
-	$s(\mathbb{K}^m) := \text{Abb}(\mathbb{N}, \mathbb{K}^m) = (\mathbb{K}^m)^{\mathbb{N}}$
-	- Abbildung
-	$c(\mathbb{K}^m) := \{ (x_n) \in s(\mathbb{K}^m) ; (x_n) \text{ ist konvergent} \} .$
-	- $c(\mathbb{K}^m)$ ist ein Untervektorraum von $s(\mathbb{K}^m)$.
-	- Die Abbildung $\lim : c(\mathbb{K}^m) \to \mathbb{K}^m, \quad (x_n) \mapsto \lim_{n \to \infty} (x_n)$  ist definiert und linear.
-	- Für $(\lambda_n) \in c(\mathbb{K})$ und $(x_n) \in c(\mathbb{K}^m)$ mit $\lambda_n \to \alpha$ und $x_n \to a$ gilt $\lambda_n x_n \to \alpha a$ in $\mathbb{K}^m$.
 #### Cluster Points
 
 > [!note] 聚点
