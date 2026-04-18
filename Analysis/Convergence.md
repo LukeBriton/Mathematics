@@ -88,16 +88,14 @@ bounded/beschränkt
 		Für $u \in E^X$ setzen wir
 		$\|u\|_{\infty} := \|u\|_{\infty, X} := \sup\limits_{x \in X} \|u(x)\| \in \mathbb{R}^{+} \cup \{\infty\}.$
 
-有界数列向量空间 
-	$\ell_{\infty} := \ell_{\infty}(\mathbb{K}) := B(\mathbb{N}, \mathbb{K})$
-	$\|(x_n)\|_{\infty} = \sup_{n \in \mathbb{N}} |x_n|, \quad (x_n) \in \ell_{\infty}$
-	- $c_0$ und $c$ sind normierte Vektorräume bezüglich der Supremumsnorm, und $c_0 \subseteq c \subseteq \ell_\infty$ als Vektorräume.
-	- $c_0$ ist ein abgeschlossener Untervektorraum von $\ell_\infty$.
-
-有界函数向量空间
-	$B(X,E):=(B(X, E), ‖·‖_{∞}):=\{ u ∈ E^X ; u\text{ ist beschränkt} \}$ ist ein Untervektorraum von $E^X$
+- 有界函数向量空间
+	$$
+	B(X,E):=(B(X, E), ‖·‖_{∞}):=\{ u ∈ E^X ; u\text{ ist beschränkt} \}
+	$$
+	ist ein Untervektorraum von $E^X$
 	- $(E, ‖·‖)$ Banach $\implies$ $B(X,E)$ Banach
-	- $B(E, F ) ∩ \text{Hom}(E, F ) = {0}.$
+		- $B(E, F ) ∩ \text{Hom}(E, F ) = {0}.$
+	- 有界数列向量空间 $\ell_{\infty}$
 
 #### Monotone Sequences
 
@@ -313,14 +311,3 @@ $$
 
 
 - $ℓ_1$ space
-	Es sei 
-	$$
-	ℓ_1 := ℓ_1(\mathbb{K}) := \left( \{ (x_k) \in \mathbb{R} ; \sum x_k \text{ ist absolut konvergent} \}, \|\cdot\|_1 \right)
-	$$
-	mit
-	$$
-	\|(x_k)\|_1 := \sum_{k=0}^{\infty} |x_k| .
-	$$
-	- (a) $ℓ_1$ ist ein Banachraum.
-	- (b) $ℓ_1$ ist ein echter Untervektorraum von $ℓ_\infty$ mit $\|\cdot\|_\infty \le \|\cdot\|_1$.
-	- (c) Die von $ℓ_\infty$ auf $ℓ_1$ induzierte Norm ist zu der $ℓ_1$-Norm nicht äquivalent. (Hinweis: Man betrachte die Folge $(\xi_j)$ mit $\xi_j := (x_{j,k})_{k \in \mathbb{N}}$, wobei $x_{j,k} = 1$ für $k \le j$, und $x_{j,k} = 0$ für $k > j$ gilt.)
