@@ -1,13 +1,16 @@
 #### Basics
 
 - das Skalarprodukt (auch inneres Produkt oder Punktprodukt) 
-	$(\cdot|\cdot) : E \times E \to \mathbb{K} , \quad (x, y) \mapsto (x|y)$ with 共轭对称、半双线性、正定
+	$(\cdot|\cdot) : E \times E \to \mathbb{K} , \quad (x, y) \mapsto (x|y)$
+	with 共轭对称、半双线性、正定
 	- konjugiert symmetrisch
 		$\mathbb{K} = \mathbb{R}$: symmetrisch
 		$\mathbb{K} = \mathbb{C}$: hermitesch
 	- konjugiert linear
 		$\mathbb{K} = \mathbb{R}$: Bilinearform
 		$\mathbb{K} = \mathbb{C}$: Sesquilinearform
+	- stetig
+	  (Dreiecks- & Cauch-Schwarzschen Ungleichung)
 - Prähilbertraum/Innenproduktraum $(E, (\cdot|\cdot))$
 - das euklidische innere Produkt
 	Für $m \in \mathbb{N}^\times$ und $x = (x_1, \dots, x_m)$ und $y = (y_1, \dots, y_m)$ in $\mathbb{K}^m$ setzen wir

@@ -1,7 +1,9 @@
 #### Basics
 
 - norm/norme/Norm
-	$\|\cdot\| : E \to \mathbb{R}^+$ with 正定、正齐次/半范数、三角不等式/次可加
+	$\|\cdot\| : E \to \mathbb{R}^+$
+	with 正定、正齐次/半范数、三角不等式/次可加
+	- Lipschitz-stetig (Die umgekehrte Dreiecksungleichung)
 - normierter Vektorraum $(E, \|\cdot\|)$
 - von der Norm induzierte Metrik
 	Es sei $E := (E, \|\cdot\|)$ ein normierter Vektorraum,
@@ -32,6 +34,8 @@
 	- $|\cdot|_1 \sim |\cdot| \sim |\cdot|_\infty \quad \text{auf } \mathbb{K}^m$
 		$\mathbb{B}^m \subset \mathbb{B}_\infty^m \subset \sqrt{m}\mathbb{B}^m, \quad \mathbb{B}_1^m \subset \mathbb{B}^m \subset \sqrt{m}\mathbb{B}_1^m.$
 	Auf $\mathbb{K}^m$ sind alle Normen äquivalent
+	- Es seien $E$ und $F$ normierte Vektorräume und $X \subset E$.
+	  Dann ist die Stetigkeit von $f: X \to F$ in $x_0 \in X$ unabhängig von der Wahl äquivalenter Normen auf $E$ und auf $F$.
 - Matrix norm
 	Für $m, n \in \mathbb{N}^\times$ bezeichnet $\mathbb{K}^{m \times n}$ die Menge aller $(m \times n)$-Matrizen mit Einträgen aus $\mathbb{K}$. Wir können $\mathbb{K}^{m \times n}$ als die Menge aller Abbildungen von $\{1, \dots, m\} \times \{1, \dots, n\}$ in $\mathbb{K}$ auffassen.
 	- Dann ist $\mathbb{K}^{m \times n}$ mit den punktweisen Verknüpfungen ein Vektorraum.

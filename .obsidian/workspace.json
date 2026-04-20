@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "445abdd5b74f32ba",
+        "id": "8d921a74588f9987",
         "type": "tabs",
         "children": [
           {
-            "id": "b5e5180b64642f9d",
+            "id": "7b299917e3970ac5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "space relation",
+                "query": "Abstand",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
               "title": "Explorateur de fichiers"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,25 +175,25 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "9b29e7483ebaf799",
+  "active": "7b299917e3970ac5",
   "lastOpenFiles": [
+    "Analysis/Continuous Functions.md",
     "Analysis/Sequence.md",
     "Analysis/Convergence.md",
     "Analysis/Normed Vector Space.md",
+    "Linear Algebra/Inner Product Space.md",
+    "Topology/Fundamentals.md",
     "Analysis/Series.md",
     "Analysis/Metric Space.md",
     "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
     "Abstract Algebra/Algebraic Structures.md",
-    "Analysis/Continuous Functions.md",
-    "Topology/Fundamentals.md",
     "Abstract Algebra/Algebra over a field.md",
     "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
     "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
     "Analyse/Vol. I/Chap. III/§2. Convergence uniforme.md",
     "Analyse/Vol. I/Chap. II/§3. Premières notions sur les fonctions analytiques.md",
     "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
-    "Linear Algebra/Inner Product Space.md",
     "AI/Convolution.md",
     "Analysis/Banach Space.md",
     "Linear Algebra/Vector Space.md",
