@@ -43,12 +43,30 @@
 		- (a) Durch
 			$|A| := \left( \sum_{j=1}^{m} \sum_{k=1}^{n} |a_{jk}|^2 \right)^{1/2}, \quad A = [a_{jk}] \in \mathbb{K}^{m \times n}$
 			wird auf $\mathbb{K}^{m \times n}$ eine Norm definiert. (Frobenius norm)
+			- [matrices - The Frobenius norm is not an operator norm - Mathematics Stack Exchange](https://math.stackexchange.com/questions/3354914/the-frobenius-norm-is-not-an-operator-norm)
+			- [normed spaces - Frobenius norm is not induced - Mathematics Stack Exchange](https://math.stackexchange.com/questions/588481/frobenius-norm-is-not-induced)
+			- [linear algebra - Operator norm induced by Frobenius norm - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2600330/operator-norm-induced-by-frobenius-norm)
+			- [matrices - Why is the Frobenius norm of a matrix greater than or equal to the spectral norm? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/252819/why-is-the-frobenius-norm-of-a-matrix-greater-than-or-equal-to-the-spectral-norm)
 		- (b) Die folgenden Abbildungen definieren äquivalente Normen:
 			(1) $[a_{jk}] \mapsto \sum_{j=1}^{m} \sum_{k=1}^{n} |a_{jk}|$ ($1$-norm)
 			(2) $[a_{jk}] \mapsto \max_{1 \le j \le m} \sum_{k=1}^{n} |a_{jk}|$ ($\infty$-norm)
 			(3) $[a_{jk}] \mapsto \max_{1 \le k \le n} \sum_{j=1}^{m} |a_{jk}|$
 			(4) $[a_{jk}] \mapsto \max_{\substack{1 \le j \le m \\ 1 \le k \le n}} |a_{jk}|$ (max norm)
- 
+- Es sei $n \in \mathbb{N}^\times$. In der Linearen Algebra wird gezeigt, daß für $A = [a_{jk}] \in \mathbb{K}^{n \times n}$ die **Determinante**, $\det A$, von $A$ durch
+	$$
+	\det A = \sum_{\sigma \in S_n} (\text{sign } \sigma) a_{1\sigma(1)} \cdots a_{n\sigma(n)}
+	$$
+	gegeben ist. Man zeige, daß die Abbildung
+	$$
+	\mathbb{K}^{n \times n} \to \mathbb{K}, \quad A \mapsto \det A
+	$$
+	stetig ist. (Hinweis: Durch die Bijektion
+	$$
+	\mathbb{K}^{m \times n} \to \mathbb{K}^{mn}, \quad \begin{bmatrix} a_{11} & \dots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{m1} & \dots & a_{mn} \end{bmatrix} \mapsto (a_{11}, \dots, a_{1n}, a_{21}, \dots, a_{mn})
+	$$
+	wird $\mathbb{K}^{m \times n}$ mit der natürlichen Topologie versehen.)
+	- $\mathbb K^{n\times n}\xrightarrow{\text{flattening}}\mathbb K^{n^2}\xrightarrow{\text{polynomial }P}\mathbb K$
+
 [vector spaces - Difference between metric and norm made concrete: The case of Euclid - Mathematics Stack Exchange](https://math.stackexchange.com/questions/38634/difference-between-metric-and-norm-made-concrete-the-case-of-euclid)
 
 [general topology - Metric spaces and normed vector spaces - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1607957/metric-spaces-and-normed-vector-spaces)

@@ -11,6 +11,10 @@
 		$\mathbb{K} = \mathbb{C}$: Sesquilinearform
 	- stetig
 	  (Dreiecks- & Cauch-Schwarzschen Ungleichung)
+		- Dann sind die Abbildungen
+			- $E \to \mathbb{K}, \quad x \mapsto (x|y_0)$
+			- $E \to \mathbb{K}, \quad y \mapsto (x_0|y)$
+			stetig.
 - Prähilbertraum/Innenproduktraum $(E, (\cdot|\cdot))$
 - das euklidische innere Produkt
 	Für $m \in \mathbb{N}^\times$ und $x = (x_1, \dots, x_m)$ und $y = (y_1, \dots, y_m)$ in $\mathbb{K}^m$ setzen wir

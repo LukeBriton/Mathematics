@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8d921a74588f9987",
+        "id": "dd4211871ff63566",
         "type": "tabs",
         "children": [
           {
-            "id": "7b299917e3970ac5",
+            "id": "3adc9468b0064f38",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Abstand",
+                "query": "Determinante",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "Explorateur de fichiers"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -175,19 +176,20 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "7b299917e3970ac5",
+  "active": "3adc9468b0064f38",
   "lastOpenFiles": [
     "Analysis/Continuous Functions.md",
-    "Analysis/Sequence.md",
-    "Analysis/Convergence.md",
-    "Analysis/Normed Vector Space.md",
     "Linear Algebra/Inner Product Space.md",
+    "Analysis/Normed Vector Space.md",
+    "Abstract Algebra/Algebraic Structures.md",
+    "Linear Algebra/Vector Space.md",
+    "Analysis/Sequence.md",
+    "Analysis/Metric Space.md",
+    "Analysis/Convergence.md",
     "Topology/Fundamentals.md",
     "Analysis/Series.md",
-    "Analysis/Metric Space.md",
     "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
-    "Abstract Algebra/Algebraic Structures.md",
     "Abstract Algebra/Algebra over a field.md",
     "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
     "Analyse/Vol. I/Chap. III/§3. Bolzano-Weierstrass et critère de Cauchy.md",
@@ -196,7 +198,6 @@
     "Analyse/Vol. I/Chap. II/§2. Séries absolument convergentes.md",
     "AI/Convolution.md",
     "Analysis/Banach Space.md",
-    "Linear Algebra/Vector Space.md",
     "Linear Algebra/Vector.md",
     "Abstract Algebra/Field.md",
     "AI/Tensor.md",

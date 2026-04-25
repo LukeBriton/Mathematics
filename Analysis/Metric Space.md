@@ -18,6 +18,8 @@
 	- die Menge aller Umgebungen des Punktes: $\mathcal{U}(a) := \mathcal{U}_X(a) := \{ U \subseteq X ; U \text{ ist Umgebung von } a \} \subseteq \mathcal{P}(X) .$
 	- die offene/abgeschlossene $ε$-Umgebung von $a$:
 		$\mathbb{B}(a, ε)$ und $\bar{\mathbb{B}}(a, ε)$
+	- [general topology - Must every point have its own singleton as a neighborhood? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/2337205/must-every-point-have-its-own-singleton-as-a-neighborhood)
+	  [real analysis - Can a neighbourhood of a point be an singleton set? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/474746/can-a-neighbourhood-of-a-point-be-an-singleton-set)
 
 - equivalent metrics
 	Zwei Metriken $d_1$ und $d_2$ auf einer Menge $X$ heißen **äquivalent**, wenn es zu jedem $x \in X$ und jedem $\varepsilon > 0$ positive Zahlen $r_1$ und $r_2$ gibt mit
@@ -25,7 +27,14 @@
 	\mathbb{B}_1(x, r_1) \subset \mathbb{B}_2(x, \varepsilon), \quad \mathbb{B}_2(x, r_2) \subset \mathbb{B}_1(x, \varepsilon).
 	$$
 	Hierbei bezeichnet $\mathbb{B}_j$ den Ball in $(X, d)$, $j = 1, 2$.
-
+	- $d_1$ und $d_2$ sind genau dann äquivalent, wenn $d_1$ zugleich stärker und schwächer als $d_2$ ist, d.h., falls für jedes $x \in X$ gilt: $\mathfrak{U}_{X_1}(x) = \mathfrak{U}_{X_2}(x)$.
+- Es seien $d_1$ und $d_2$ Metriken auf $X$ und $X_j := (X, d_j)$, $j = 1, 2$. Dann heißt $d_1$ **stärker** als $d_2$, wenn für jedes $x \in X$ gilt: $\mathfrak{U}_{X_1}(x) \supseteq \mathfrak{U}_{X_2}(x)$, d.h., wenn jeder Punkt mehr $d_1$-Umgebungen als $d_2$-Umgebungen besitzt. In diesem Fall sagt man auch, $d_2$ sei **schwächer** als $d_1$.
+	- $d_1$ ist genau dann stärker als $d_2$, wenn die natürliche Injektion $i: X_1 \to X_2$, $x \mapsto x$ stetig ist.
+		$U\in \mathfrak U_{X_1}(x) \cancel\implies i(U)\in \mathfrak U_{X_2}(x)$
+		$V\in \mathfrak U_{X_2}(x)\implies i^{-1}(V)\in \mathfrak U_{X_1}(x)$
+		- $i^{-1}(V)=V$
+		$V\in \mathfrak U_{X_2}(x)\implies V\in \mathfrak U_{X_1}(x)$
+		- $\implies\mathfrak U_{X_2}(x)\subseteq \mathfrak U_{X_1}(x)$
 [abstract algebra - Difference between "space" and "algebraic structure" - Mathematics Stack Exchange](https://math.stackexchange.com/questions/174108/difference-between-space-and-algebraic-structure)
 
 #### Supplementals
