@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dd4211871ff63566",
+        "id": "717ff15954085ef4",
         "type": "tabs",
         "children": [
           {
-            "id": "3adc9468b0064f38",
+            "id": "89dcc7ecb7534f85",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Determinante",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,17 +176,17 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "3adc9468b0064f38",
+  "active": "89dcc7ecb7534f85",
   "lastOpenFiles": [
+    "Topology/Fundamentals.md",
+    "Analysis/Metric Space.md",
+    "Analysis/Convergence.md",
+    "Analysis/Normed Vector Space.md",
     "Analysis/Continuous Functions.md",
     "Linear Algebra/Inner Product Space.md",
-    "Analysis/Normed Vector Space.md",
     "Abstract Algebra/Algebraic Structures.md",
     "Linear Algebra/Vector Space.md",
     "Analysis/Sequence.md",
-    "Analysis/Metric Space.md",
-    "Analysis/Convergence.md",
-    "Topology/Fundamentals.md",
     "Analysis/Series.md",
     "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",

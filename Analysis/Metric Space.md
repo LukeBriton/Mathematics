@@ -3,6 +3,12 @@
 - metric/métrique/Metrik
 	$d: X \times X \to \mathbb{R}^+$ with 正定、对称、三角不等式/次可加性
 - metrischer Raum $(X, d)$
+- empty metric space
+	[too simple to be simple in nLab](https://ncatlab.org/nlab/show/too+simple+to+be+simple)
+	- [Is the Empty metric space, complete? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1025149/is-the-empty-metric-space-complete)
+	- [general topology - Is there a convention regarding the empty metric space? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/45145/is-there-a-convention-regarding-the-empty-metric-space)
+	- [real analysis - What is the best way to define the diameter of the empty subset of a metric space? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/579373/what-is-the-best-way-to-define-the-diameter-of-the-empty-subset-of-a-metric-spac?lq=1)
+- [Singleton as a metric space - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1550869/singleton-as-a-metric-space)
 - $\mathbb{K}$ has the natural metric
 	$\mathbb{K} \times \mathbb{K} \to \mathbb{R}^{+}, \quad (x, y) \mapsto |x - y|.$
 - induced metric & metric subspace

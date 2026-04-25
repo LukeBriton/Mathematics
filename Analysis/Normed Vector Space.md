@@ -36,6 +36,7 @@
 	Auf $\mathbb{K}^m$ sind alle Normen äquivalent
 	- Es seien $E$ und $F$ normierte Vektorräume und $X \subset E$.
 	  Dann ist die Stetigkeit von $f: X \to F$ in $x_0 \in X$ unabhängig von der Wahl äquivalenter Normen auf $E$ und auf $F$.
+	- $A(\subseteq X)$ ist offen bezügl. jeder äquivalenten Norm auf $X$.
 - Matrix norm
 	Für $m, n \in \mathbb{N}^\times$ bezeichnet $\mathbb{K}^{m \times n}$ die Menge aller $(m \times n)$-Matrizen mit Einträgen aus $\mathbb{K}$. Wir können $\mathbb{K}^{m \times n}$ als die Menge aller Abbildungen von $\{1, \dots, m\} \times \{1, \dots, n\}$ in $\mathbb{K}$ auffassen.
 	- Dann ist $\mathbb{K}^{m \times n}$ mit den punktweisen Verknüpfungen ein Vektorraum.

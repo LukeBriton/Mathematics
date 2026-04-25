@@ -9,6 +9,8 @@ der offene/abgeschlossene Ball
 		$\mathbb{D}(a, r)$, $\bar{\mathbb{D}}(a, r)$
 		Einheitskreisscheibe $\mathbb{D}$, $\bar{\mathbb{D}}$
 - In dem metrischen Raum $X:=(X,d)$
+	- 
+	- Der abgeschlossene Ball $\bar{\mathbb{B}}(x, r)$ ist abgeschlossen.
 - In dem normierten Vektorraum $E := (E, \|\cdot\|)$
 	$\mathbb{B}(a, r)$, $\bar{\mathbb{B}}(a, r)$
 	Einheitsball $\mathbb{B} := \mathbb{B}(0,1)$, $\bar{\mathbb{B}} := \bar{\mathbb{B}}(0,1)$
@@ -32,16 +34,26 @@ der offene/abgeschlossene Ball
 
 #### Openness
 
-$X:=(X,d)$ 度量空间，$a\in A \subseteq X$
-- $a$ 是 $A$ 的**内点**：有邻域包含之
-- $A$ 是**开集**：各点均内点
-	- 开球是开集（次可加性）
+$X:=(X,d)$ ist ein metrischer Raum, $a \in U\subseteq A\subseteq X$
 
-- $X = (X, ‖·‖)$ 在与其等价的范数上也开
+- interior point/point intérieur/innerer Punkt
+	$a$ 是 $A$ 的内点： $\exists$ Umgebung $U$ von $a$.
+	- 有邻域包含之
 
-- 度量空间中各点均有开邻域
-	考虑 diameter of a metric space...
-	Amann 书中仅仅提及度量空间的子集 d-bounded/bounded in X (w.r.t. d) 及其 diam
+> [!note] 开集
+>
+>- 各点均为内点。
+>- Der offene Ball $\mathbb{B}(a, r)$ ist offen.
+
+- Die Begriffe „innerer Punkt“ und „offene Menge“ hängen vom umgebenden metrischen Raum $X$ ab.
+
+- Jeder Punkt in einem metrischen Raum eine *offene* Umgebung besitzt.
+	Das hat **nichts Wesentliches mit Beschränktheit oder Durchmesser** zu tun.
+	- Beschränktheit sagt nur, dass alle Punkte einer Menge höchstens einen festen Abstand voneinander haben.
+		- Eine beschränkte Menge muss nicht offen sein, z.B. $[0,1]\subseteq \mathbb{R}$
+		- Umgekehrt ist eine offene Umgebung nicht unbedingt beschränkt, denn $\mathbb{R}$ selbst ist offen in $\mathbb{R}$, aber unbeschränkt.
+
+- [general topology - Are Singleton sets in $\mathbb{R}$ both closed and open? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/17649/are-singleton-sets-in-mathbbr-both-closed-and-open)
 
 - $\mathcal{T}$ 为 $X$ 中开集的集族
 	(1) $∅, X$ 开
