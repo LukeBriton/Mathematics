@@ -1,4 +1,4 @@
-#### Preliminaries
+#### Open/Close Ball
 
 der offene/abgeschlossene Ball
 - In $\mathbb{K}=\mathbb{R}$ oder $\mathbb{C}$
@@ -9,7 +9,7 @@ der offene/abgeschlossene Ball
 		$\mathbb{D}(a, r)$, $\bar{\mathbb{D}}(a, r)$
 		Einheitskreisscheibe $\mathbb{D}$, $\bar{\mathbb{D}}$
 - In dem metrischen Raum $X:=(X,d)$
-	- 
+	- Der offene Ball $\mathbb{B}(a, r)$ ist offen.
 	- Der abgeschlossene Ball $\bar{\mathbb{B}}(x, r)$ ist abgeschlossen.
 - In dem normierten Vektorraum $E := (E, \|\cdot\|)$
 	$\mathbb{B}(a, r)$, $\bar{\mathbb{B}}(a, r)$
@@ -18,19 +18,72 @@ der offene/abgeschlossene Ball
 - Es bezeichne $\mathbb{B}^m$ den reellen offenen euklidischen Einheitsball, d.h. $\mathbb{B}^m := \mathbb{B}_{\mathbb{R}^m},$
 	$\mathbb{B}_{\infty}^{m} = \underbrace{\mathbb{B}_{\infty}^{1} \times \cdots \times \mathbb{B}_{\infty}^{1}}_{m} = (-1, 1)^{m}$
 	Für $\mathbb{B}^m$ oder $\mathbb{B}_1^m$ gibt es keine analoge Darstellung.
-- Umgebungsbegriff
-	Es seien $E = (E, \|\cdot\|)$ ein normierter Vektorraum und $\|\cdot\|_1$ eine zu $\|\cdot\|$ äquivalente Norm auf $E$. Setzen wir $E_1 := (E, \|\cdot\|_1)$, so gilt
-	$$
-	\mathcal{U}_E(a) = \mathcal{U}_{E_1}(a) , \quad a \in E
-	$$
-	d.h., der Umgebungsbegriff hängt nur von der Äquivalenzklasse der Norm ab; äquivalente Normen liefern dieselben Umgebungen.
-- $\mathbb{C} := \mathbb{R} + i\mathbb{R}$
-	$\mathbb{C} \ni z = x + iy \leftrightarrow (x, y) \in \mathbb{R}^2$
-	$\mathbb{C}^m \ni (z_1, \dots, z_m) = (x_1 + iy_1, \dots, x_m + iy_m) \leftrightarrow (x_1, y_1, \dots, x_m, y_m) \in \mathbb{R}^{2m}$
-	- Bezüglich dieser kanonischen Identifikation gilt
-		$\mathbb{B}_{\mathbb{C}^m} = \mathbb{B}^{2m} = \mathbb{B}_{\mathbb{R}^{2m}}$ und folglich $\mathcal{U}_{\mathbb{C}^m} = \mathcal{U}_{\mathbb{R}^{2m}}$
-	Somit können bei **topologischen Fragen**, d.h. bei Untersuchungen, in welchen Aussagen über Umgebungen von Punkten gemacht werden, die Mengen $\mathbb{C}^m$ und $\mathbb{R}^{2m}$ miteinander identifiziert werden.
-- Die Begriffe „Häufungspunkt“ und „Konvergenz“ sind **topologische Konzeptionen**, d.h., sie verwenden nur den Umgebungsbegriff und sind somit invariant unter Übergang zu äquivalenten Normen.
+
+#### Topological Space
+
+topological space/espace topologique/topologischer Raum
+- Für das Mengensystem $\mathfrak{T} := \{ O \subseteq X ; O \text{ ist offen} \}$ gelten folgende Aussagen:
+	- (i) $\emptyset, X \in \mathfrak{T}$.
+		- $\emptyset$ und $X$ sind abgeschlossen.
+	- (ii) Aus $O_\alpha \in \mathfrak{T}$ für $\alpha \in \mathbf{A}$ folgt $\bigcup_\alpha O_\alpha \in \mathfrak{T}$, d.h., beliebige Vereinigungen offener Mengen sind offen.
+		- *Beliebige Durchschnitte abgeschlossener Mengen sind abgeschlossen.*
+		- Unendliche Vereinigungen abgeschlossener Mengen brauchen nicht abgeschlossen zu sein.
+			- Beispielsweise gilt $\bigcup_{n=1}^{\infty} [\mathbb{B}(0, 1/n)]^c = \mathbb{R}^\times$ in $\mathbb{R}$.
+	- (iii) Aus $O_0, \dots, O_n \in \mathfrak{T}$ folgt $\bigcap_{k=0}^n O_k \in \mathfrak{T}$, d.h., endliche Durchschnitte offener Mengen sind offen.
+		- *Endliche Vereinigungen abgeschlossener Mengen sind abgeschlossen.*
+		- Unendliche Durchschnitte offener Mengen brauchen nicht offen zu sein.
+			- In $\mathbb{R}$ gilt z.B. $\bigcap_{n=1}^{\infty} \mathbb{B}(0, 1/n) = \{0\}$
+- Die Eigenschaften (i)–(iii) verwenden nur die Mengenoperationen $\bigcup$ and $\bigcap$. Somit können wir diese Eigenschaften axiomatisch für beliebige Mengensysteme fordern.
+- Genauer sei $M$ eine Menge, und $\mathfrak{T} \subseteq \mathfrak{P}(M)$ sei ein Mengensystem mit den Eigenschaften (i)–(iii).
+	- Dann heißt $\mathfrak{T}$ **Topologie** auf $M$,
+	- und die Elemente von $\mathfrak{T}$ werden als **offene Mengen** bezügl. $\mathfrak{T}$ bezeichnet.
+	- Schließlich heißt das Paar $(M, \mathfrak{T})$ **topologischer Raum**.
+- Es sei $\mathfrak{T} \subseteq \mathfrak{P}(X)$ das Mengensystem.
+	- Dann ist $\mathfrak{T}$ **die von der Metrik $d$ erzeugte Topologie** auf $X$.
+	- Ist $X$ ein normierter Vektorraum und ist die Metrik von der Norm induziert, heißt $\mathfrak{T}$ **Normtopologie**.
+
+#### 聚点、触点
+
+Es seien $A \subset X$ und $x \in X$. Wir nennen $x$ **Berührungspunkt** von $A$, falls jede Umgebung von $x$ in $X$ einen nichtleeren Durchschnitt mit $A$ hat.
+
+Das Element $x \in X$ heißt **Häufungspunkt** von $A$, wenn jede Umgebung von $x$ in $X$ einen von $x$ verschiedenen Punkt von $A$ enthält. Schließlich setzen wir
+$$
+\overline{A} := \{ x \in X ; x \text{ ist Berührungspunkt von } A \} .
+$$
+
+Es ist sorgfältig zu unterscheiden zwischen dem Begriff „Häufungspunkt einer Menge $A$“ und dem Begriff „Häufungspunkt einer Folge $(x_n)$“.
+Außerdem muß ein Häufungspunkt von $A$ natürlich nicht in $A$ liegen.
+
+##### Comparison
+
+|      | French               | German          | English            |
+| ---- | -------------------- | --------------- | ------------------ |
+| 触点   | point adhérent       | Berührpunkte    | adherent point     |
+| 极限点  | point limite         | Häufungspunkt   | limit point        |
+| 集合聚点 | point d’accumulation | Häufungspunkt   | accumulation point |
+| 数列聚点 | valeur d'adhérence   | Häufungspunkt   | cluster point      |
+| 数列极限 | limite               | Grenzwert/Limes | limit              |
+
+[Point d'accumulation (mathématiques) — Wikipédia](https://fr.wikipedia.org/wiki/Point_d%27accumulation_\(math%C3%A9matiques\))
+
+Pour un espace non $T_1$, la terminologie est fluctuante : certains auteurs appellent « point limite » ce qui est appelé ici « point d'accumulation » et réservent l'expression « point d'accumulation » pour la propriété en général plus forte signalée ici. C'est cette autre terminologie qui est adoptée dans l'article [Point adhérent](https://fr.wikipedia.org/wiki/Point_adh%C3%A9rent "Point adhérent").
+
+[Point adhérent — Wikipédia](https://fr.wikipedia.org/wiki/Point_adh%C3%A9rent)
+
+- Pour la première école, représentée par [Choquet](https://fr.wikipedia.org/wiki/Gustave_Choquet "Gustave Choquet"), [Schwartz](https://fr.wikipedia.org/wiki/Laurent_Schwartz_\(math%C3%A9maticien\) "Laurent Schwartz (mathématicien)") et Willard et adoptée dans l'article détaillé, les expressions « point d'accumulation » et « point limite » sont synonymes. Si _A_ est une partie d'un espace topologique, un point d'accumulation ou point limite de _A_ est un point _x_ dont tout [voisinage](https://fr.wikipedia.org/wiki/Voisinage_\(math%C3%A9matiques\) "Voisinage (mathématiques)") contient un point de _A_ distinct de _x_. Autrement dit, un point _x_ est un point d'accumulation de _A_ si et seulement s'il est adhérent à _A \ {x}_.
+- Pour la deuxième école, représentée par [Steen](https://fr.wikipedia.org/wiki/Lynn_Arthur_Steen "Lynn Arthur Steen") et [Seebach](https://fr.wikipedia.org/wiki/J._Arthur_Seebach,_Jr. "J. Arthur Seebach, Jr.") et adoptée dans cet article, « point d'accumulation » désigne une propriété plus forte que « point limite ». On dit qu'un point _x_ de _E_ est un point d'accumulation de _A_ si tout [voisinage](https://fr.wikipedia.org/wiki/Voisinage_\(math%C3%A9matiques\) "Voisinage (mathématiques)") de _x_ contient une _infinité_ de points de _A_. Tout point d'accumulation de _A_ dans _E_ est donc un point limite de _A_, mais la réciproque n'est vraie que si _E_ est un [espace T1](https://fr.wikipedia.org/wiki/Espace_T1 "Espace T1") ou _a fortiori_ s'il est [séparé](https://fr.wikipedia.org/wiki/Espace_s%C3%A9par%C3%A9 "Espace séparé") (espace T2), en particulier s'il est [métrisable](https://fr.wikipedia.org/wiki/Espace_m%C3%A9trisable "Espace métrisable"). Mais dans un espace topologique quelconque, _A_ peut avoir des points limites qui ne sont pas des points d'accumulation. Par exemple, si _E_ est un [ensemble fini](https://fr.wikipedia.org/wiki/Ensemble_fini "Ensemble fini") non vide muni de la [topologie grossière](https://fr.wikipedia.org/wiki/Topologie_grossi%C3%A8re "Topologie grossière") et si _A_ est une partie stricte non vide de _E_, tout point de _E \ A_ est point limite de _A_ mais _A_ ne possède pas de point d'accumulation dans _E_.
+
+[Berührungspunkt – Wikipedia](https://de.wikipedia.org/wiki/Ber%C3%BChrungspunkt)
+
+**Berührungspunkt** oder **Berührpunkte** 
+
+[Häufungspunkt – Wikipedia](https://de.wikipedia.org/wiki/H%C3%A4ufungspunkt)
+
+(auch **Adhärenzpunkt**)
+
+Zuweilen werden statt Häufungspunkt auch die Wörter _Häufungswert_, $β$-_Punkt_ oder _Grenzpunkt_ benutzt.
+
+
 
 #### Openness
 
@@ -43,15 +96,15 @@ $X:=(X,d)$ ist ein metrischer Raum, $a \in U\subseteq A\subseteq X$
 > [!note] 开集
 >
 >- 各点均为内点。
->- Der offene Ball $\mathbb{B}(a, r)$ ist offen.
+>- 
 
 - Die Begriffe „innerer Punkt“ und „offene Menge“ hängen vom umgebenden metrischen Raum $X$ ab.
 
 - Jeder Punkt in einem metrischen Raum eine *offene* Umgebung besitzt.
 	Das hat **nichts Wesentliches mit Beschränktheit oder Durchmesser** zu tun.
-	- Beschränktheit sagt nur, dass alle Punkte einer Menge höchstens einen festen Abstand voneinander haben.
-		- Eine beschränkte Menge muss nicht offen sein, z.B. $[0,1]\subseteq \mathbb{R}$
-		- Umgekehrt ist eine offene Umgebung nicht unbedingt beschränkt, denn $\mathbb{R}$ selbst ist offen in $\mathbb{R}$, aber unbeschränkt.
+	Beschränktheit sagt nur, dass alle Punkte einer Menge höchstens einen festen Abstand voneinander haben.
+	-  Eine beschränkte Menge muss nicht offen sein, z.B. $[0,1]\subseteq \mathbb{R}$
+	- Umgekehrt ist eine offene Umgebung nicht unbedingt beschränkt, denn $\mathbb{R}$ selbst ist offen in $\mathbb{R}$, aber unbeschränkt.
 
 - [general topology - Are Singleton sets in $\mathbb{R}$ both closed and open? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/17649/are-singleton-sets-in-mathbbr-both-closed-and-open)
 

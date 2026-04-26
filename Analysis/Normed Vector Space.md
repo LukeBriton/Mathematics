@@ -33,10 +33,18 @@
 	In diesem Fall schreiben wir $\|\cdot\|_1 \sim \|\cdot\|_2$.
 	- $|\cdot|_1 \sim |\cdot| \sim |\cdot|_\infty \quad \text{auf } \mathbb{K}^m$
 		$\mathbb{B}^m \subset \mathbb{B}_\infty^m \subset \sqrt{m}\mathbb{B}^m, \quad \mathbb{B}_1^m \subset \mathbb{B}^m \subset \sqrt{m}\mathbb{B}_1^m.$
-	Auf $\mathbb{K}^m$ sind alle Normen äquivalent
+	- Auf $\mathbb{K}^m$ sind alle Normen äquivalent
 	- Es seien $E$ und $F$ normierte Vektorräume und $X \subset E$.
 	  Dann ist die Stetigkeit von $f: X \to F$ in $x_0 \in X$ unabhängig von der Wahl äquivalenter Normen auf $E$ und auf $F$.
 	- $A(\subseteq X)$ ist offen bezügl. jeder äquivalenten Norm auf $X$.
+		- Äquivalente Normen erzeugen dieselbe Topologie auf $X$.
+- Umgebungsbegriff
+	Es seien $E = (E, \|\cdot\|)$ ein normierter Vektorraum und $\|\cdot\|_1$ eine zu $\|\cdot\|$ äquivalente Norm auf $E$. Setzen wir $E_1 := (E, \|\cdot\|_1)$, so gilt
+	$$
+	\mathcal{U}_E(a) = \mathcal{U}_{E_1}(a) , \quad a \in E
+	$$
+	d.h., der Umgebungsbegriff hängt nur von der Äquivalenzklasse der Norm ab; äquivalente Normen liefern dieselben Umgebungen.
+- Die Begriffe „Häufungspunkt“ und „Konvergenz“ sind **topologische Konzeptionen**, d.h., sie verwenden nur den Umgebungsbegriff und sind somit invariant unter Übergang zu äquivalenten Normen.
 - Matrix norm
 	Für $m, n \in \mathbb{N}^\times$ bezeichnet $\mathbb{K}^{m \times n}$ die Menge aller $(m \times n)$-Matrizen mit Einträgen aus $\mathbb{K}$. Wir können $\mathbb{K}^{m \times n}$ als die Menge aller Abbildungen von $\{1, \dots, m\} \times \{1, \dots, n\}$ in $\mathbb{K}$ auffassen.
 	- Dann ist $\mathbb{K}^{m \times n}$ mit den punktweisen Verknüpfungen ein Vektorraum.

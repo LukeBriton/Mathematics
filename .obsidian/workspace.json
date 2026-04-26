@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "717ff15954085ef4",
+        "id": "48962e048e8a1ec5",
         "type": "tabs",
         "children": [
           {
-            "id": "89dcc7ecb7534f85",
+            "id": "888abf3501d178d2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -161,14 +161,15 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5
+    "width": 399.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
+      "canvas:Créer une nouvelle toile": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "webpage-html-export:Export as HTML": false,
@@ -176,20 +177,23 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "89dcc7ecb7534f85",
+  "active": "888abf3501d178d2",
   "lastOpenFiles": [
     "Topology/Topological Space.md",
-    "Topology/Fundamentals.md",
-    "Analysis/Metric Space.md",
+    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analysis/Convergence.md",
+    "Analysis/Sequence.md",
     "Analysis/Normed Vector Space.md",
+    "Analysis/Number Systems/Complex Numbers.md",
+    "Analysis/Number Systems/Real Numbers.md",
+    "Analysis/Analysis.md",
+    "Abstract Algebra/Algebraic Structures.md",
+    "Analysis/Metric Space.md",
+    "Topology/Fundamentals.md",
     "Analysis/Continuous Functions.md",
     "Linear Algebra/Inner Product Space.md",
-    "Abstract Algebra/Algebraic Structures.md",
     "Linear Algebra/Vector Space.md",
-    "Analysis/Sequence.md",
     "Analysis/Series.md",
-    "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
     "Abstract Algebra/Algebra over a field.md",
     "Analyse/Vol. I/Chap. III/§4. Fonctions dérivables.md",
@@ -201,9 +205,6 @@
     "Analysis/Banach Space.md",
     "Linear Algebra/Vector.md",
     "Abstract Algebra/Field.md",
-    "AI/Tensor.md",
-    "Analysis/Multivariable Differential Calculus.md",
-    "Analysis/Measure Theory.md",
     "Sans titre.base",
     "Sans titre.canvas",
     "Sans titre 1.canvas",
