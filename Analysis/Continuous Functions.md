@@ -31,14 +31,6 @@ where $0 < α ≤ 1$. We also have
 >	$f(x_n) \to f(x) \iff f_k(x_n) \xrightarrow[n \to \infty]{} f_k(x), \quad k = 1, \dots, m.$
 >	- $f : X \to \mathbb{C}$ 实部、虚部连续
 >- （实变函数）左、右连续
->
->$f$ ist stetig:
->- $f^{-1}:\mathcal{T}_Y\to\mathcal{T}_X$
->	- 开集的前像为开
->	- 闭集的前像为闭
->	反之不亦然：
->		- $A=\{(x, y)\in \mathbb{R}^2| xy=1\}$ 闭，$\text{pr}_1(\cdot)$ 连续，但 $\text{pr}_1(A)$ 开。
->		- $y=x^2, x\in(-1,1), y\in[0,1)$   
 
 - 若把它误读成“包含**所有**邻域的像”，就变成“局部常值”，太强。
 	$\exists U\ni x_0$, $\forall V\ni f(x_0)$, s.t. $f(U)\subseteq V$
@@ -60,6 +52,21 @@ https://dummit.cos.northeastern.edu/teaching_fa22_4555/complexanalysis_5_local_b
 	$\forall V\ni f(x_0)$, $\exists U\ni x_0$, s.t. $V\subseteq f(U)$
 	- 例如 $f(x)=x^2$ 在 $x_0=0$ 连续，但 $f(U)$ 不可能覆盖 $0$ 的任何对称邻域（会缺少负数）
 
+> [!note] 连续
+>$f$ ist stetig:
+>- $f^{-1}:\mathcal{T}_Y\to\mathcal{T}_X$
+>	- 开集的前像为开
+>	- 闭集的前像为闭
+>	反之不亦然：
+>		- $A=\{(x, y)\in \mathbb{R}^2| xy=1\}$ 闭，$\text{pr}_1(\cdot)$ 连续，但 $\text{pr}_1(A)$ 开。
+>		- $y=x^2, x\in(-1,1), y\in[0,1)$
+
+$\implies$ Dann ist für jedes $y \in Y$ die Faser $f^{-1}(y)$ von $f$ abgeschlossen in $X$, d.h., Lösungsmengen von Gleichungen mit stetigen Funktionen sind abgeschlossen.
+
+$\implies$ Lösungsmengen von Ungleichungen Es seien $f : X \to \mathbb{R}$ stetig und $r \in \mathbb{R}$. Dann ist $\{ x \in X ; f(x) \le r \}$ abgeschlossen in $X$, und $\{ x \in X ; f(x) < r \}$ ist offen in $X$.
+- $\{ x \in X ; f(x) \le r \} = f^{-1}((-\infty, r])$
+- $\{ x \in X ; f(x) < r \} = f^{-1}((-\infty, r)) .$
+
 - Abrundungsfunktion, auch Gaußklammer ($[x]$)
 	$\lfloor \cdot \rfloor : \mathbb{R} \to \mathbb{R}$, $x \mapsto \lfloor x \rfloor:=\max\{k\in \mathbb{Z}; k\leq x\}$
 	- stetig in $x_0 \in \mathbb{R} \setminus \mathbb{Z}$
@@ -77,6 +84,13 @@ https://dummit.cos.northeastern.edu/teaching_fa22_4555/complexanalysis_5_local_b
 	$\mathrm{pr}_k: E \to E_k, \quad x = (x_1, \dots, x_m) \mapsto x_k, \quad 1 \le k \le m,$
 	- Jede $\mathrm{pr}_k$ ist Lipschitz-stetig.
 	- $\mathrm{pr}_k: \mathbb{K}^m \to \mathbb{K}$
+		- Der abgeschlossene $n$-dimensionale Einheitswürfel $I^n := \{ x \in \mathbb{R}^n ; 0 \le x_k \le 1, 1 \le k \le n \}$ ist abgeschlossen in $\mathbb{R}^n$.
+			$$
+			  I^n = \bigcap_{k=1}^{n} (\{ x \in \mathbb{R}^n ; \text{pr}_k(x) \le 1 \} \cap \{ x \in \mathbb{R}^n ; \text{pr}_k(x) \ge 0 \} )
+			  $$
+	- Es seien $k, n \in \mathbb{N}^\times$ mit $k \le n$. Dann ist $\mathbb{K}^k$ abgeschlossen in $\mathbb{K}^n$.
+		- $\mathrm{pr} : \mathbb{K}^n \to \mathbb{K}^{n-k} , \quad (x_1, \dots, x_n) \mapsto (x_{k+1}, \dots, x_n) .$
+			- $\mathbb{K}^k = \mathrm{pr}^{-1}(0)$
 	- $z \mapsto \mathrm{Re}(z)$, $z \mapsto \mathrm{Im}(z)$
 - Abstandsfunktion
 	Abstand von $x$ zu $M$
@@ -280,9 +294,3 @@ $X:=(X,d)$ 中
 - 开覆盖：各集均开
 - 紧：任意开覆盖，有有限开覆盖子集。
 	任意开覆盖，有有限子覆盖。
-
-### Exercise
-
-#### 12: Show that any linear function from $\mathbb{K}^n$ to $\mathbb{K}^m$ is Lipschitz continuous.
-
-

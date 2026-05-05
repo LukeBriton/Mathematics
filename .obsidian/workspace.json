@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "55e0c2774a57ad1e",
+        "id": "4c687b56c1488c2f",
         "type": "tabs",
         "children": [
           {
-            "id": "4ee063d9786fa434",
+            "id": "7eab5bc3193e6759",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -70,7 +70,8 @@
               "title": "Explorateur de fichiers"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -175,10 +176,10 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "4ee063d9786fa434",
+  "active": "7eab5bc3193e6759",
   "lastOpenFiles": [
-    "Topology/Topological Space.md",
     "Analysis/Continuous Functions.md",
+    "Topology/Topological Space.md",
     "Analysis/Metric Space.md",
     "Linear Algebra/Inner Product Space.md",
     "Analysis/Sequence.md",
