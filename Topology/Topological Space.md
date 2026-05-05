@@ -11,7 +11,12 @@ der offene/abgeschlossene Ball
 - In dem metrischen Raum $X:=(X,d)$
 	- Der offene Ball $\mathbb{B}(a, r)$ ist offen.
 	- Der abgeschlossene Ball $\bar{\mathbb{B}}(x, r)$ ist abgeschlossen.
+	- $\overline{\mathbb{B}(x, r)} \subseteq \bar{\mathbb{B}}(x, r)$ für $r \geq 0$.
 - In dem normierten Vektorraum $E := (E, \|\cdot\|)$
+	- $r > 0$, so gilt $\overline{\mathbb{B}}(x, r) = \bar{\mathbb{B}}(x, r)$.
+	- $\partial \mathbb{B}(x, r) = \partial \overline{\mathbb{B}}(x, r) = \{ y \in X ; \|x - y\| = r \} .$
+	- Die $n$-Sphäre $S^n := \{ x \in \mathbb{R}^{n+1} ; |x| = 1 \}$ ist abgeschlossen in $\mathbb{R}^{n+1}$.
+		$S^n = \partial \mathbb{B}^{n+1}$
 	$\mathbb{B}(a, r)$, $\bar{\mathbb{B}}(a, r)$
 	Einheitsball $\mathbb{B} := \mathbb{B}(0,1)$, $\bar{\mathbb{B}} := \bar{\mathbb{B}}(0,1)$
 	$r\mathbb{B} = \mathbb{B}(0,r)$, $r\bar{\mathbb{B}} = \bar{\mathbb{B}}(0,r)$, $a + r\mathbb{B} = \mathbb{B}(a,r)$, $a + r\bar{\mathbb{B}} = \bar{\mathbb{B}}(a,r)$.
@@ -45,8 +50,12 @@ topological space/espace topologique/topologischer Raum
 #### 聚点、触点
 
 Es seien $A \subset X$ und $x \in X$. Wir nennen $x$ **Berührungspunkt** von $A$, falls jede Umgebung von $x$ in $X$ einen nichtleeren Durchschnitt mit $A$ hat.
+- $\iff\exists\{x_n\} \in A$ 收敛于 $x$
 
-Das Element $x \in X$ heißt **Häufungspunkt** von $A$, wenn jede Umgebung von $x$ in $X$ einen von $x$ verschiedenen Punkt von $A$ enthält. Schließlich setzen wir
+Das Element $x \in X$ heißt **Häufungspunkt** von $A$, wenn jede Umgebung von $x$ in $X$ einen von $x$ verschiedenen Punkt von $A$ enthält.
+- $\iff\exists\{x_n\} \in A\backslash\{x\}$ 收敛于 $x$
+
+Schließlich setzen wir
 $$
 \overline{A} := \{ x \in X ; x \text{ ist Berührungspunkt von } A \} .
 $$
@@ -56,13 +65,13 @@ Außerdem muß ein Häufungspunkt von $A$ natürlich nicht in $A$ liegen.
 
 ##### Comparison
 
-|      | French               | German          | English            |
-| ---- | -------------------- | --------------- | ------------------ |
-| 触点   | point adhérent       | Berührpunkte    | adherent point     |
-| 极限点  | point limite         | Häufungspunkt   | limit point        |
-| 集合聚点 | point d’accumulation | Häufungspunkt   | accumulation point |
-| 数列聚点 | valeur d'adhérence   | Häufungspunkt   | cluster point      |
-| 数列极限 | limite               | Grenzwert/Limes | limit              |
+|      | Definition                                                          | French               | German          | English            |
+| ---- | ------------------------------------------------------------------- | -------------------- | --------------- | ------------------ |
+| 触点   | $\forall U\ni x,\ U\cap A\neq\varnothing$                           | point adhérent       | Berührpunkte    | adherent point     |
+| 极限点  | $\forall U\ni x,\ U\cap(A\setminus{x})\neq\varnothing$              | point limite         | Häufungspunkt   | limit point        |
+| 集合聚点 | $\forall U\ni x,\ U\cap A$ contains infinitely many distinct points | point d’accumulation | Häufungspunkt   | accumulation point |
+| 数列聚点 | $\forall U\ni x,\ \{n:x_n\in U\}$ is infinite                       | valeur d'adhérence   | Häufungspunkt   | cluster point      |
+| 数列极限 | $\forall U\ni x,\ \exists N,\ \forall n\ge N,\ x_n\in U$            | limite               | Grenzwert/Limes | limit              |
 
 [Point d'accumulation (mathématiques) — Wikipédia](https://fr.wikipedia.org/wiki/Point_d%27accumulation_\(math%C3%A9matiques\))
 
@@ -83,8 +92,6 @@ Pour un espace non $T_1$, la terminologie est fluctuante : certains auteurs app
 
 Zuweilen werden statt Häufungspunkt auch die Wörter _Häufungswert_, $β$-_Punkt_ oder _Grenzpunkt_ benutzt.
 
-
-
 #### Openness
 
 $X:=(X,d)$ ist ein metrischer Raum, $a \in U\subseteq A\subseteq X$
@@ -94,9 +101,9 @@ $X:=(X,d)$ ist ein metrischer Raum, $a \in U\subseteq A\subseteq X$
 	- 有邻域包含之
 
 > [!note] 开集
->
+>open set/ouvert/offene Menge
 >- 各点均为内点。
->- 
+>- 补集为闭。
 
 - Die Begriffe „innerer Punkt“ und „offene Menge“ hängen vom umgebenden metrischen Raum $X$ ab.
 
@@ -108,64 +115,59 @@ $X:=(X,d)$ ist ein metrischer Raum, $a \in U\subseteq A\subseteq X$
 
 - [general topology - Are Singleton sets in $\mathbb{R}$ both closed and open? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/17649/are-singleton-sets-in-mathbbr-both-closed-and-open)
 
-- $\mathcal{T}$ 为 $X$ 中开集的集族
-	(1) $∅, X$ 开
-	(2) 开集的任意并开
-		（有类直和？）
-	(3) 开集的有限（？）交开
-		反例：$⋂(-1/n , 1/n)$
-	- $M$ be a set, $\mathcal{T}\subseteq P(M)$ satisfying (1)-(3)
-		- $\mathcal{T}$: $M$ 上拓扑，其中元素为开集。
-			topology on $X$ induced from the metric $d$
-			若 $X$ 赋范，$\mathcal{T}$ 范数拓扑
-		- $(M, \mathcal{T})$: 拓扑空间
-
 #### Closedness
 
-Es sei $X$ ein metrischer Raum.
-Eine Teilmenge $Y$ von $X$ heißt **abgeschlossen**, wenn für jede Folge $(y_n)$ in $Y$, die in $X$ konvergiert, gilt: $\lim y_n \in Y$.
+Es sei $X$ ein metrischer Raum, $A \subseteq X$
 
- $A \subseteq X$
- - A 闭，若其补集开
-	(1) $∅, X$ 闭
-	(2) 闭集的任意交闭
-	(3) 闭集的有限并闭
-		反例：$⋃ (-1/n, 1/n)^c$ =$(-\infty, -1]⋃[1,\infty) ⋃ ... = \mathbb{R}\backslash\{0\}$
-		$\{0\}$ 是单点集，故以上应是开集
+> [!note] 闭集
+>closed set/fermé/abgeschlossene Menge
+>- 补集为开。
+>- 包含所有触点。
+>- 包含任意收敛列的极限。
 
-c.f. cluster point of sequence: 任意邻域，无限多项。
-
- $A \subseteq X, x\in X$
-- accumulation point of $A$: $x$ 的任意邻域与 $A$ 有交。
-- limit point of $A$: $x$ 的任意邻域还包含 $A$ 中别的点。
-	limit point $\subseteq$ accumulation point
-- $\bar{A} =\{\text{accumulation points of }A\} = \text{cl}(A)$
-	- $A \subseteq \bar{A}$
-	- $A = \bar{A} \Longleftrightarrow A\text{ is closed}$
-
-- limit point $\Longleftrightarrow$ $\exists\{x_n\} \in A\backslash\{x\}$ 收敛于 $x$
-- accumulation point $\Longleftrightarrow$ $\exists\{x_n\} \in A$ 收敛于 $x$
-
-- $A$ 是闭集
-- $A$ 包含所有 limit points
-- 所有在 $X$ 上收敛的 $\{x_n\}\in A^\mathbb{N}$，极限 $\in A$
-
+closure/adhérence/Abgeschlossene Hülle
 闭包：最小闭集/包含之的闭集之交
-- $\bar{A} =\{\text{accumulation points of }A\} = \text{cl}(A)$
+- $\text{cl}(A) := \bigcap_{B \in M} B$
+- $\overline{A} := \{ x \in X ; x \text{ ist Berührungspunkt von } A \} = \text{cl}(A).$
+	- $A \subseteq \overline{A}$
+	- $A = \overline{A} \iff A$ ist abgeschlossen.
 
+- Die „Hüllenbildung“ $h : \mathfrak{P}(X) \to \mathfrak{P}(X)$, $A \mapsto \overline{A}$ ist eine wachsende und **idempotente** Abbildung, d.h., es gilt $h^2 = h$.
+
+- Wir wollen nun eine weitere derartige Selbstabbildung von $\mathfrak{P}(X)$ definieren, die es erlauben wird, offene Mengen zu charakterisieren.
+
+interior (or open kernel)/intérieur/Innere (bzw. offener Kern)
 内部：最大开集/含于其的开集之并
-- $\overset{\circ}{A} =\{\text{interior points of }A\} = \text{int}(A)$
+- $\text{int}(A) = \bigcup \{ O \subset A ; O \text{ ist offen in } X \} .$
+- $\mathring{A} := \{ a \in A ; a \text{ ist innerer Punkt von } A \} = \text{int}(A)$
+- Offensichtlich ist die Abbildung $\mathfrak{P}(X) \to \mathfrak{P}(X)$, $A \mapsto \mathring{A}$ die oben angekündigte wachsende und idempotente Funktion.
 
-边界：$∂A := \bar{A}\backslash\overset{\circ}{A} = \bar{A}\cap(\overset{\circ}{A})^c$
+
+Boundary/frontière/Rand
+边界：$\partial A := \overline{A} \setminus \mathring{A} = \overline{A}\cap(\mathring{A})^c$
+- Diese Definition ist eine präzise Fassung des anschaulichen Begriffes der „Begrenzung“ einer Punktmenge im Anschauungsraum.
+- Der Rand von $X$ ist leer, d.h. $\partial X = \emptyset$.
 - 边界是闭的
 - $x$ 在边界上 $\Longleftrightarrow$ 任意邻域均与 $A$ 和 $\overset{\circ}{A}$ 有交
+- [What is the etymology of using \partial to denote the boundary of a set? : r/math](https://www.reddit.com/r/math/comments/82vcui/what_is_the_etymology_of_using_partial_to_denote/)
+- [analysis - Same symbol "$\partial$" - different things ( the boundary $\partial A$ / partial derivative $\frac{\partial f}{\partial x}$)? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/31347/same-symbol-partial-different-things-the-boundary-partial-a-parti)
+- [at.algebraic topology - Is the boundary $\partial S$ analogous to a derivative? - MathOverflow](https://mathoverflow.net/questions/46252/is-the-boundary-partial-s-analogous-to-a-derivative)
 
-#### The Hausdorff Condition
+- Es sei $I \subseteq \mathbb{R}$ ein Intervall, und es seien $a := \inf I$ und $b := \sup I$. Dann gilt
+	$$
+	\partial I = \begin{cases} \emptyset, & I = \mathbb{R} \text{ oder } I = \emptyset, \\ \{a\}, & a \in \mathbb{R} \text{ und } b = \infty, \\ \{b\}, & b \in \mathbb{R} \text{ und } a = -\infty, \\ \{a, b\}, & -\infty < a < b < \infty, \\ \{a\}, & a = b \in \mathbb{R}. \end{cases}
+	$$
 
-$x\neq y\in X$，分别存在邻域使得二者无交。
+#### The Hausdorff Condition ($T_2$)
 
-一点的全部邻域，其交为 singleton
+- Die Hausdorffeigenschaft
+	Der folgende Satz zeigt, daß in metrischen Räumen je zwei verschiedene Punkte disjunkte Umgebungen besitzen. Dies impliziert die Beziehung
+	$$
+	\bigcap \{ U ; U \in \mathfrak{U}_X(x) \} = \{x\} , \quad x \in X .
+	$$
+	Also gibt es genügend viele Umgebungen, um zwischen den verschiedenen Punkten eines metrischen Raumes zu unterscheiden.
+- Hausdorffsche Trennungseigenschaft
+  Es seien $x, y \in X$ mit $x \neq y$. Dann gibt es eine Umgebung $U$ von $x$ und eine Umgebung $V$ von $y$ mit $U \cap V = \emptyset$.
+	- Bei ihrem Beweis haben wir wesentlich von der Existenz einer Metrik Gebrauch gemacht.
+	- Tatsächlich gibt es (nichtmetrische) topologische Räume, in denen Satz nicht gilt.
 
-- 度量空间上的单点集为闭集。
-
-- 度量空间均为 Hausdorff 空间

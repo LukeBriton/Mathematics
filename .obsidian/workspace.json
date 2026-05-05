@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "48962e048e8a1ec5",
+        "id": "55e0c2774a57ad1e",
         "type": "tabs",
         "children": [
           {
-            "id": "888abf3501d178d2",
+            "id": "4ee063d9786fa434",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -70,8 +70,7 @@
               "title": "Explorateur de fichiers"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,8 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5,
-    "collapsed": true
+    "width": 399.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,21 +175,21 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "888abf3501d178d2",
+  "active": "4ee063d9786fa434",
   "lastOpenFiles": [
     "Topology/Topological Space.md",
+    "Analysis/Continuous Functions.md",
+    "Analysis/Metric Space.md",
+    "Linear Algebra/Inner Product Space.md",
+    "Analysis/Sequence.md",
     "Analyse/Vol. I/Chap. III/§1. Le théorème des valeurs intermédiaires.md",
     "Analysis/Convergence.md",
-    "Analysis/Sequence.md",
     "Analysis/Normed Vector Space.md",
     "Analysis/Number Systems/Complex Numbers.md",
     "Analysis/Number Systems/Real Numbers.md",
     "Analysis/Analysis.md",
     "Abstract Algebra/Algebraic Structures.md",
-    "Analysis/Metric Space.md",
     "Topology/Fundamentals.md",
-    "Analysis/Continuous Functions.md",
-    "Linear Algebra/Inner Product Space.md",
     "Linear Algebra/Vector Space.md",
     "Analysis/Series.md",
     "Analyse/Vol. I/Chap. II/§1. Suites et séries convergentes.md",
