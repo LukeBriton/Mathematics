@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4c687b56c1488c2f",
+        "id": "5c6bb018bd6af003",
         "type": "tabs",
         "children": [
           {
-            "id": "7eab5bc3193e6759",
+            "id": "51b88c8738e8ee8a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Analysis/Series.md",
+                "file": "Analysis/Number Systems/Nested Intervals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Series"
+              "title": "Plan de Nested Intervals"
             }
           }
         ]
@@ -176,10 +176,12 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "7eab5bc3193e6759",
+  "active": "51b88c8738e8ee8a",
   "lastOpenFiles": [
-    "Analysis/Continuous Functions.md",
     "Topology/Topological Space.md",
+    "Analysis/Number Systems/Nested Intervals.md",
+    "Analysis/Number Systems/Real Numbers.md",
+    "Analysis/Continuous Functions.md",
     "Analysis/Metric Space.md",
     "Linear Algebra/Inner Product Space.md",
     "Analysis/Sequence.md",
@@ -187,7 +189,6 @@
     "Analysis/Convergence.md",
     "Analysis/Normed Vector Space.md",
     "Analysis/Number Systems/Complex Numbers.md",
-    "Analysis/Number Systems/Real Numbers.md",
     "Analysis/Analysis.md",
     "Abstract Algebra/Algebraic Structures.md",
     "Topology/Fundamentals.md",
@@ -203,7 +204,6 @@
     "AI/Convolution.md",
     "Analysis/Banach Space.md",
     "Linear Algebra/Vector.md",
-    "Abstract Algebra/Field.md",
     "Sans titre.base",
     "Sans titre.canvas",
     "Sans titre 1.canvas",
